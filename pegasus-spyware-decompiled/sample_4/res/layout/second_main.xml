@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_layout" layout="@layout/title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_layout">
+        <include layout="@layout/unroot_tip" />
+        <RelativeLayout android:id="@id/perm_layout" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_below="@id/title_layout">
+            <TextView android:textSize="17.0dip" android:gravity="center_vertical" android:id="@id/suggest" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="113.0dip" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="@string/suggest" android:drawableLeft="@drawable/export" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/suggest" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="12.0dip" android:gravity="center" android:id="@id/selectall" android:background="@drawable/signbtn_bg" android:layout_width="10.0dip" android:layout_height="30.0dip" android:text="@string/on_all" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0dip" android:gravity="center" android:id="@id/infoall" android:background="@drawable/signbtn_bg" android:layout_width="10.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:text="@string/info_all" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0dip" android:gravity="center" android:id="@id/offall" android:background="@drawable/signbtn_bg" android:layout_width="10.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:text="@string/off_all" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:id="@id/deny_apps_des" android:layout_below="@id/layout1" style="@style/TextBackground" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/deny_apps_des">
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/listView_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/deny_apps_des">
+        <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="#ffeeeeee" android:divider="@drawable/space_line" />
+        <TextView android:gravity="center" android:id="@id/txt_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/nodate" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/expandablelistview_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/deny_apps_des">
+        <ExpandableListView android:id="@id/expandListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffeeeeee" android:divider="@drawable/space_line" />
+        <TextView android:gravity="center" android:id="@id/txt_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/nodate" />
+    </LinearLayout>
+</RelativeLayout>

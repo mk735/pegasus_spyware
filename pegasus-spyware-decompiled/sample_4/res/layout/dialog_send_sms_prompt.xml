@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ff454545" android:gravity="bottom" android:id="@id/textView1" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/send_to_phone" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <EditText android:textColor="#ff454545" android:id="@id/dialog_send_prom_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:maxLines="1" android:maxLength="11" android:layout_below="@id/textView1" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff454545" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/send_sms_promt_is" android:layout_below="@id/dialog_send_prom_phone_number" android:layout_alignLeft="@id/textView1" />
+    <TextView android:textColor="#ff454545" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/use_one_sms" android:layout_below="@id/textView2" android:layout_centerHorizontal="true" />
+</RelativeLayout>

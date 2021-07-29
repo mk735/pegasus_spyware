@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/safemode_icon_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="15.0px" android:src="@drawable/mes" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/safemode_icon_call">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/safemode_showsms_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:ellipsize="end" android:gravity="right" android:id="@id/safemode_showsms_date" android:paddingRight="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="?android:textColorSecondary" android:id="@id/safemode_showsms_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="30" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

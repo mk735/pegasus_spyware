@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/privacy_state_first" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="17.0dip" android:textColor="#ff4a4a4a" android:id="@id/txt_what" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/what_privacy" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff7a7a7a" android:id="@id/txt_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="15.0dip" android:text="@string/privacy_answer" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="15.0dip">
+                <ImageView android:id="@id/trust_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/bluearrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff29b1ef" android:id="@id/txt_trust" android:background="@drawable/blueline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/trust_arrow" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:text="@string/privacy_set" style="@style/TextBackground" />
+    <ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/privacy_layout" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/img_left1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/perm_privacy" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/img_right1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/img_right1" android:layout_toRightOf="@id/img_left1" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_info" android:singleLine="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ffababab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/privacy_info_summary" android:maxLines="2" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/location_layout" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/img_left2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/perm_location" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/img_right2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/img_right2" android:layout_toRightOf="@id/img_left2" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/location_info" android:singleLine="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ffababab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/location_info_summary" android:maxLines="2" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/record_layout" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <ImageView android:id="@id/img_left3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/perm_tapping" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/img_right3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/img_right3" android:layout_toRightOf="@id/img_left3" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_calling" android:singleLine="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ffababab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/device_control_summary" android:maxLines="2" />
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:text="@string/privacy_record" style="@style/TextBackground" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                <TextView android:textColor="#ff7a7a7a" android:id="@id/txt_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_privacy_log" android:layout_centerInParent="true" />
+                <RelativeLayout android:id="@id/logs_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/more_logs" android:background="@drawable/morelog_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/arrow" />
+                    </LinearLayout>
+                    <ListView android:id="@id/listView" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:layout_toLeftOf="@id/more_logs" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

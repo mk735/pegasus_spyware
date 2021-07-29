@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff7a5309" android:layout_gravity="center_vertical" android:id="@id/show_root_info" android:background="@drawable/show_root_info" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/not_root_net_control" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff884906" android:layout_gravity="center_vertical" android:id="@id/show_root_info_select" android:background="@drawable/show_root_info_select" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/not_root_net_control" />
+    <RelativeLayout android:background="@drawable/notification_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+        <TextView android:id="@id/can_conn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/net_app_check_mobile_all" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/net_app_check_wlan_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#ffeeeeee" />
+    <TextView android:gravity="center" android:id="@android:id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/data_usage_empty" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

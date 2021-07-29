@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="72.0dip" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/sign_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" />
+        <TextView android:gravity="center_vertical" android:id="@id/sign_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="15.0dip" android:gravity="center" android:id="@id/sign_tag" android:background="@drawable/signbtn_bg" android:focusable="true" android:layout_width="85.0dip" android:layout_height="36.0dip" android:layout_marginRight="10.0dip" android:text="@string/signcancel" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0dip" android:gravity="center" android:id="@id/sign_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginRight="10.0dip" android:text="@string/sign" android:singleLine="true" android:layout_toLeftOf="@id/sign_tag" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@drawable/space_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

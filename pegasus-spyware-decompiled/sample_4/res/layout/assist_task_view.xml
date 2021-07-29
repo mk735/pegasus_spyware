@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/text_switcher_title" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="@string/sub_title_recent_task" />
+    <include layout="@layout/assist_divider_horizontal_title" />
+    <GridView android:gravity="center_vertical" android:id="@id/float_grid" android:layout_width="fill_parent" android:layout_height="0.0dip" android:horizontalSpacing="2.0dip" android:verticalSpacing="3.0dip" android:stretchMode="columnWidth" android:numColumns="4" android:layout_weight="1.0" />
+</LinearLayout>

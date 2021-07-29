@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="switchStyle" format="reference" />
+    <attr name="preferenceFrameLayoutStyle" format="reference" />
+    <attr name="preferenceFragmentStyle" format="reference" />
+    <attr name="preferencePanelStyle" format="reference" />
+    <attr name="switchPreferenceStyle" format="reference" />
+    <attr name="thumb" format="reference" />
+    <attr name="track" format="reference" />
+    <attr name="textOn" format="string" />
+    <attr name="textOff" format="string" />
+    <attr name="thumbTextPadding" format="dimension" />
+    <attr name="switchTextAppearance" format="reference" />
+    <attr name="switchMinWidth" format="dimension" />
+    <attr name="switchPadding" format="dimension" />
+    <attr name="orderingFromXml" format="boolean" />
+    <attr name="id" format="reference" />
+    <attr name="title" format="string" />
+    <attr name="summary" format="string" />
+    <attr name="breadCrumbTitle" format="string" />
+    <attr name="breadCrumbShortTitle" format="string" />
+    <attr name="icon" format="reference" />
+    <attr name="fragment" format="string" />
+    <attr name="key" format="string" />
+    <attr name="order" format="integer" />
+    <attr name="layout" format="reference" />
+    <attr name="widgetLayout" format="reference" />
+    <attr name="enabled" format="boolean" />
+    <attr name="selectable" format="boolean" />
+    <attr name="dependency" format="string" />
+    <attr name="persistent" format="boolean" />
+    <attr name="defaultValue" format="reference|string|integer|boolean|float" />
+    <attr name="shouldDisableView" format="boolean" />
+    <attr name="summaryOn" format="string" />
+    <attr name="summaryOff" format="string" />
+    <attr name="disableDependentsState" format="boolean" />
+    <attr name="dialogTitle" format="string" />
+    <attr name="dialogMessage" format="string" />
+    <attr name="dialogIcon" format="reference" />
+    <attr name="positiveButtonText" format="string" />
+    <attr name="negativeButtonText" format="string" />
+    <attr name="dialogLayout" format="reference" />
+    <attr name="entries" format="reference" />
+    <attr name="entryValues" format="reference" />
+    <attr name="borderTop" format="dimension" />
+    <attr name="borderBottom" format="dimension" />
+    <attr name="borderLeft" format="dimension" />
+    <attr name="borderRight" format="dimension" />
+    <attr name="layout_removeBorders" format="boolean" />
+    <attr name="switchTextOn" format="string" />
+    <attr name="switchTextOff" format="string" />
+    <attr name="max" format="integer" />
+    <attr name="progress" format="integer" />
+    <attr name="secondaryProgress" format="integer" />
+    <attr name="indeterminate" format="boolean" />
+    <attr name="indeterminateOnly" format="boolean" />
+    <attr name="indeterminateDrawable" format="reference" />
+    <attr name="progressDrawable" format="reference" />
+    <attr name="indeterminateDuration" format="integer" min="1" />
+    <attr name="indeterminateBehavior">
+        <enum name="repeat" value="1" />
+        <enum name="cycle" value="2" />
+    </attr>
+    <attr name="minWidth" format="dimension" />
+    <attr name="maxWidth" format="dimension" />
+    <attr name="minHeight" format="dimension" />
+    <attr name="maxHeight" format="dimension" />
+    <attr name="interpolator" format="reference" />
+    <attr name="animationResolution" format="integer" />
+    <attr name="typeface">
+        <enum name="normal" value="0" />
+        <enum name="sans" value="1" />
+        <enum name="serif" value="2" />
+        <enum name="monospace" value="3" />
+    </attr>
+    <attr name="textStyle">
+        <flag name="normal" value="0x00000000" />
+        <flag name="bold" value="0x00000001" />
+        <flag name="italic" value="0x00000002" />
+    </attr>
+    <attr name="textColor" format="reference|color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="textColorHighlight" format="reference|color" />
+    <attr name="textColorHint" format="reference|color" />
+    <attr name="textColorLink" format="reference|color" />
+    <attr name="textAllCaps" format="boolean" />
+    <attr name="enable_checkbox" format="boolean" />
+    <attr name="animationDuration" format="integer" />
+    <attr name="position">
+        <enum name="top" value="0" />
+        <enum name="bottom" value="1" />
+        <enum name="left" value="2" />
+        <enum name="right" value="3" />
+    </attr>
+    <attr name="handle" format="reference" />
+    <attr name="handlebtn" format="reference" />
+    <attr name="content" format="reference" />
+    <attr name="hideContent" format="reference" />
+    <attr name="linearFlying" format="boolean" />
+    <attr name="weight" format="fraction" />
+    <attr name="openedHandle" format="reference|color" />
+    <attr name="closedHandle" format="reference|color" />
+    <attr name="settingTitle" format="string" />
+    <attr name="settingSummary" format="string" />
+    <attr name="settingShowCheckBox" format="boolean" />
+    <attr name="switcher_icon" format="reference" />
+    <attr name="switcher_label" format="reference" />
+</resources>

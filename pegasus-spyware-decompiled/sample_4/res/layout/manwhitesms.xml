@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/mansms_framelayout" android:visibility="gone" layout="@layout/title" />
+    <ListView android:id="@id/safemode_man_whitelist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mansms_framelayout" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/safemode_man_whitelist" android:layout_alignParentBottom="true">
+        <Button android:id="@id/safemode_white_del" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_del" android:layout_weight="1.0" />
+        <Button android:id="@id/safemode_white_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/selectall" android:layout_weight="1.0" />
+        <Button android:id="@id/safemode_white_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/back" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

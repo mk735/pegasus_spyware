@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/poplistview_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="160.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/popwindow_harass_set" android:background="@drawable/poplistview_item_bg" android:padding="10.0dip" android:visibility="visible" android:layout_width="160.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_setting" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/antispamsmsharss" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="110.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/popwindow_white" android:background="@drawable/poplistview_item_bg" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_white" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/hadsign_title" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="110.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/popwindow_black" android:background="@drawable/poplistview_item_bg" android:padding="10.0dip" android:visibility="visible" android:layout_width="160.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_black" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/antispammancall" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="?android:listDivider" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/popwindow_night" android:background="@drawable/poplistview_item_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_night" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/night_harsstitle" />
+    </LinearLayout>
+</LinearLayout>

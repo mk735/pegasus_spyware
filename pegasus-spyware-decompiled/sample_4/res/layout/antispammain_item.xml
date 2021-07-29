@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/antispammain_text" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <ImageView android:id="@id/antispamicon_before" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0px" android:layout_below="@id/antispammain_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/antispamicon_behind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/antispamlayout001" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:layout_toLeftOf="@id/antispamicon_behind" android:layout_toRightOf="@id/antispamicon_before" android:layout_centerVertical="true">
+        <TextView android:textSize="22.0dip" android:textColor="@color/black2" android:id="@id/antispamtt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffababab" android:id="@id/antispamtt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:maxLines="3" />
+    </LinearLayout>
+</RelativeLayout>

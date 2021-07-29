@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/notification_slide_left" android:text="@string/notification_string_forbid" android:drawableLeft="@drawable/perm_deny" style="@style/silde_panel_btn_noti" />
+    <Button android:id="@id/notification_slide_center" android:text="@string/notification_string_allow" android:drawableLeft="@drawable/perm_grant" style="@style/silde_panel_btn_noti" />
+    <Button android:id="@id/notification_slide_right" android:text="@string/notification_string_uninstall" android:drawableLeft="@drawable/perm_uninstall" style="@style/silde_panel_btn_noti" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bgtop" android:background="@drawable/installer_bg" android:paddingTop="32.0dip" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <ImageView android:id="@id/appicon" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff464646" android:id="@id/appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/white2" android:gravity="center_vertical" android:id="@id/text_layout" android:background="@drawable/list_bg" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/detail_perm3" android:layout_below="@id/bgtop" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0dip" android:textColor="@color/white2" android:gravity="center" android:id="@id/error_txt" android:background="@drawable/one_btn_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/back" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView android:id="@id/virus_detail_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom" android:layout_below="@id/text_layout">
+        <LinearLayout android:orientation="vertical" android:id="@id/pression_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

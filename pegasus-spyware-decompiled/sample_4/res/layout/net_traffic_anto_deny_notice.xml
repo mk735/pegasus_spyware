@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parentPanel" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/noti_layout" android:background="@drawable/dialog_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/atat_safe_icon" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+        <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:id="@id/net_traffic_dailog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/net_traffic_anto_deny_noti_title" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="0.0" android:shadowRadius="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:text="@string/net_traffic_anto_deny_summary" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/net_traffic_notice_check_parent" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/net_traffic_notice_check" android:background="@drawable/ic_checkbox" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" />
+            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/net_traffic_look_up" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_traffic_show_donot_notice" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/splitline" android:background="@drawable/home_page_drawer_splitline_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/continue_to_use" android:layout_width="120.0dip" android:layout_height="32.0dip" android:text="@string/net_traffic_continue_to_use" style="@style/NegativeButtonText" />
+            <TextView android:id="@id/net_deny" android:layout_width="120.0dip" android:layout_height="32.0dip" android:layout_marginLeft="20.0dip" android:text="@string/net_traffic_deny_text" style="@style/ButtonText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

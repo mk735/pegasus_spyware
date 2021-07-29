@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_bar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/title_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" />
+    <ImageView android:id="@id/title_set" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set" android:layout_alignParentRight="true" />
+    <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:shadowColor="#88000000" android:shadowDx="1.0" android:shadowDy="0.0" android:shadowRadius="1.0" android:layout_toLeftOf="@id/title_set" android:layout_toRightOf="@id/title_back" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/LeemWidget.ListStyle.LinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" style="@style/LeemWidget.ListItem.Image" />
+    <RelativeLayout android:layout_width="150.0dip" android:layout_height="wrap_content" style="@style/LeemWidget.ListItem.RelativeLayout">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="140.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/memory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <CheckBox android:id="@id/checkboxWidget" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/appDelete" android:background="@drawable/rf_perf_item_press" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</LinearLayout>

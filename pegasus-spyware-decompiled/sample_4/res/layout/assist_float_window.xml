@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_gravity="center" android:layout_width="304.0dip" android:layout_height="388.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/root_view" android:background="@drawable/assist_main_bg" android:layout_width="304.0dip" android:layout_height="388.0dip">
+        <include android:id="@id/title_view" layout="@layout/assist_title" />
+        <android.support.v4.view.ViewPager android:id="@id/assist_viewpager" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/assist_indicator_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:id="@id/assist_indicator_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/assist_selector_indicator" />
+            <ImageView android:id="@id/assist_indicator_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/assist_selector_indicator" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

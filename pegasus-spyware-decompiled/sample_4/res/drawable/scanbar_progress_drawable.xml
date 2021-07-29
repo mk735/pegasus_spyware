@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/scanbar_progress_bg" />
+    <item android:id="@android:id/secondaryProgress">
+        <clip android:drawable="@drawable/scanbar_progress" />
+    </item>
+    <item android:id="@android:id/progress" android:drawable="@drawable/scanbar_anim_drawable" />
+</layer-list>

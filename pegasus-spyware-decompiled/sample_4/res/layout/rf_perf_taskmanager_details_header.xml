@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#aaccddee" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_bg_apps" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/process_mem_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stop_application" android:layout_alignParentRight="true" />
+</RelativeLayout>

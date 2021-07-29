@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/assist_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/assist_selector_main_title" android:scaleType="center" android:layout_centerInParent="true" />
+    <Button android:gravity="center" android:id="@id/setting" android:background="@drawable/assist_selector_setting_icon" android:focusable="true" android:clickable="true" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+    <Button android:textSize="14.0dip" android:textColor="@color/color_setting_back" android:gravity="center" android:id="@id/back" android:background="@drawable/assist_selector_back_icon" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="48.0dip" android:layout_height="26.0dip" android:layout_marginRight="20.0dip" android:text="@string/back" android:shadowColor="@color/white" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="0.7" android:layout_alignParentLeft="true" />
+</RelativeLayout>

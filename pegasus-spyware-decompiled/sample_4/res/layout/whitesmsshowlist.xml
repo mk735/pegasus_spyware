@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/sms_framelayout" android:visibility="gone" layout="@layout/title" />
+    <LinearLayout android:gravity="center" android:id="@id/safemode_lin_operate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <EditText android:gravity="left" android:id="@id/safemode_send_textview" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/send_smshint" android:maxLines="6" android:minLines="5" android:layout_weight="6.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lin_operateinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/safemode_operat_btn" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add" />
+            <Button android:id="@id/safemode_operat_btn1" android:background="@drawable/home_page_button_healthcheckup_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/replay_sms_card2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/whitecall_del" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:gravity="center" android:background="@drawable/buttom_bg" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <Button android:id="@id/del_whitecall" android:background="@drawable/signbtn_bg" android:layout_width="136.0dip" android:layout_height="40.0dip" android:text="@string/record_button_clear" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/safemode_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/safemode_lin_operate" android:layout_below="@id/sms_framelayout">
+        <TextView android:textColor="#ff4a4a4a" android:id="@id/txtdesc" android:background="@drawable/notification_text" android:paddingLeft="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <ListView android:id="@id/safemode_log_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="#ffeeeeee" android:divider="@drawable/rf_perf_toast_split" android:dividerHeight="2.0dip" />
+            <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/safemode_empty_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_record" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

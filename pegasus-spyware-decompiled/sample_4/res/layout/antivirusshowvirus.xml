@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/antivirusshowvirus_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/title" />
+    <TextView android:textSize="22.0dip" android:gravity="center" android:id="@id/antivirustitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:text="@string/antivirusresulttitle" android:layout_below="@id/antivirusshowvirus_title" />
+    <LinearLayout android:gravity="center" android:id="@id/antivirusbottomLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white" android:gravity="center" android:id="@id/antivirusagainscan" android:background="@drawable/kill_btn" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="@string/antivirusscan_again" />
+    </LinearLayout>
+    <ExpandableListView android:id="@id/antiviruslist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/antivirusbottomLayout" android:layout_below="@id/antivirustitle" />
+</RelativeLayout>

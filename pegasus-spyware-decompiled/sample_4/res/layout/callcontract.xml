@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/safemode_call_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/safemode_calllayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/safemode_call_check" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18.0dip" android:ellipsize="end" android:id="@id/safemode_callname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" android:layout_marginBottom="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:ellipsize="end" android:gravity="right" android:id="@id/safemode_callnumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:ellipsize="end" android:id="@id/safemode_calldate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" android:layout_marginBottom="5.0dip" android:singleLine="true" />
+            <TextView android:gravity="right" android:id="@id/safemode_calltype" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

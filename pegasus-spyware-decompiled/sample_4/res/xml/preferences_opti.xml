@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/leem_preference" android:title="@string/ignore_title" android:key="ignoreList" android:summary="@string/ignore_summary" />
+    <PreferenceScreen android:layout="@layout/leem_preference" android:title="@string/time_title" android:key="timeGap2" android:summary="@string/time_summary" />
+</PreferenceScreen>

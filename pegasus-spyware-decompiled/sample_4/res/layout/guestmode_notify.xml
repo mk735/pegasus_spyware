@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/notify_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guestmode_img" android:background="@drawable/icon" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:id="@id/guestmode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="#ff000000" android:id="@id/guestmode_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

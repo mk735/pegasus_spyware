@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/antispamlocalblackupload_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/title" />
+    <include android:id="@id/antispamtableupload_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/antispamlocalblackupload_title" layout="@layout/antispamtwo_button" />
+    <LinearLayout android:id="@id/antispamlay4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/antispamtableupload_header" />
+    <LinearLayout android:gravity="center" android:id="@id/antispamupload_start_setting_guide" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/antispamupload_AppraiseLinearLayout" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="136.0dip" android:layout_height="40.0dip" android:text="@string/antispamlocalblack_upload" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/antispamupload_start_setting_guide" android:layout_below="@id/antispamlay4">
+        <TextView android:gravity="center" android:id="@id/antispamuploadempty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/antispamno_uploadrecord" />
+        <ListView android:id="@id/uploadblacklist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" />
+    </LinearLayout>
+</RelativeLayout>

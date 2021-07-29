@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/antivirusmainpage_title1" android:visibility="gone" android:layout_alignParentTop="true" layout="@layout/title" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/antivirusmainpage_virus_status_bg" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/antivirusmainpage_virus_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/virus_home_page_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/antivirusmainpage_virus_status" android:layout_centerVertical="true">
+            <TextView android:textSize="19.0dip" android:gravity="left" android:id="@id/detail_virus_home_page" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginTop="15.0dip" android:text="@string/detail10_virus_home_page" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip">
+                <TextView android:textSize="19.0dip" android:textColor="@drawable/home_page_button_healthcheckup_color_selector" android:gravity="center" android:id="@id/button_virus_home_page" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_kill_virus_home_page" android:shadowColor="#ffe5ffbc" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/antivirus_line" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/antivirusmainpage_virus_status_bg" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/bottom_layout" android:background="@drawable/home_page_bg1" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginBottom="0.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llayout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center_vertical" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/page_indicator_bg" />
+            <ImageView android:layout_gravity="center_vertical" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/page_indicator_bg" />
+            <ImageView android:layout_gravity="center_vertical" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/page_indicator_bg" />
+        </LinearLayout>
+        <com.lenovo.safecenter.MainTab.MyScrollLayout android:id="@id/ScrollLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llayout"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout001" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0dip" android:textColor="#ff454545" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antivirs_scrolldesc1" android:singleLine="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ffababab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/antivirs_scrollinfo1" android:maxLines="2" />
+                </LinearLayout>
+                <ImageView android:id="@id/img001" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scroll1" android:layout_toLeftOf="@id/layout001" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout002" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="18.0dip" android:textColor="#ff454545" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antivirs_scrolldesc2" android:singleLine="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ffababab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/antivirs_scrollinfo2" android:maxLines="2" />
+                </LinearLayout>
+                <ImageView android:id="@id/img002" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scroll2" android:layout_toLeftOf="@id/layout002" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout003" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/antivirus_scroll3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="#ff454545" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antivirs_scrolldesc3" android:singleLine="true" />
+                        <ImageView android:id="@id/antivirusdeepscan_lenovo" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/icon" />
+                        <ImageView android:id="@id/antivirusdeepscan_qq" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/antivirusqq" />
+                        <ImageView android:id="@id/antivirusdeepscan_idefend" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/antivirusbitdefend" />
+                    </LinearLayout>
+                    <TextView android:textSize="14.0dip" android:textColor="#ffababab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/antivirs_scrollinfo3" android:maxLines="2" android:layout_below="@id/antivirus_scroll3" />
+                </LinearLayout>
+                <ImageView android:id="@id/img003" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/layout003" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </com.lenovo.safecenter.MainTab.MyScrollLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/antivirusmainistview" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dividerHeight="0.0dip" android:layout_above="@id/bottom_layout" android:layout_below="@id/antivirus_line" />
+    <TextView android:textColor="#ff6baa2d" android:gravity="center" android:id="@id/shwoaddnet" android:background="@drawable/blue_harass" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/h_del1" android:layout_above="@id/bottom_layout" />
+</RelativeLayout>

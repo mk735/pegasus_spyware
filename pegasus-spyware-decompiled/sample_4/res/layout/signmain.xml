@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="#ffeeeeee" android:focusable="false" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/signmain_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="30.0dip" android:src="@drawable/signicon" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/signmain_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Complete" android:singleLine="true" />
+            <TextView android:textSize="17.0dip" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/signstr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ff4a4a4a" android:background="@drawable/notification_text" android:paddingLeft="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginTop="5.0dip" android:text="@string/hadsign_title" />
+    <LinearLayout android:id="@id/tabmain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="5.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/tagcall_lin" android:background="@drawable/tab_select" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0dip" android:gravity="center" android:id="@id/taglist_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hadsign_title" />
+        </LinearLayout>
+        <View android:background="@drawable/tab_diverd" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="42.0dip" />
+        <LinearLayout android:gravity="center" android:id="@id/signcalled_lin" android:background="@drawable/tab_normal" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0dip" android:gravity="center" android:id="@id/calling_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hasnosign_title" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/signmain_list" android:background="@drawable/healthcheckup_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent_background" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff2b2b2b" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/signmain_empty" android:background="@drawable/healthcheckup_list_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sign_tagnull" />
+    </LinearLayout>
+</LinearLayout>

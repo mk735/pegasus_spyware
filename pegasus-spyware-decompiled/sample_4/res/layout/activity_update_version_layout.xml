@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:text="@string/update_version" style="@style/TextBackground" />
+            <RelativeLayout android:id="@id/update_version_rate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+                <TextView android:textSize="20.0dip" android:textColor="@color/black2" android:id="@id/title_update_version_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/title_update_version_rate" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/gray2" android:id="@id/detail_update_version_rate" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/detail_update_version_rate" android:singleLine="true" android:layout_below="@id/title_update_version_rate" />
+                <TextView android:textSize="19.0dip" android:textColor="@color/blue_btn" android:gravity="center" android:id="@id/button_update_version" android:background="@drawable/signbtn_bg" android:layout_width="78.0dip" android:layout_height="36.0dip" android:layout_marginRight="8.0dip" android:text="@string/update_text" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:text="@string/update_date" style="@style/TextBackground" />
+            <RelativeLayout android:id="@id/auto_update_layout" android:clickable="true" android:layout_width="fill_parent" style="@style/SettingListBackground">
+                <TextView android:textSize="20.0dip" android:textColor="@color/black2" android:id="@id/title_auto_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/title_auto_update" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/gray2" android:id="@id/detail_auto_update" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_below="@id/title_auto_update" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/arrow1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/manual_update_lab_layout" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" style="@style/SettingListBackground">
+                <TextView android:textSize="20.0dip" android:textColor="@color/black2" android:id="@id/manual_update_lab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/antivirusupdatepolicy_hand" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <RelativeLayout android:id="@id/virus_lab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/manual_update_lab_title">
+                    <TextView android:textColor="@color/gray2" android:id="@id/title_virus_lab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_virus_lab_version" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/gray2" android:id="@id/updateTime_virus_lab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/title_virus_lab" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/blacklist_lab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/virus_lab_layout">
+                    <TextView android:textColor="@color/gray2" android:id="@id/title_blacklist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/harass_lab_version" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/gray2" android:id="@id/updateTime_blacklist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/title_blacklist" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/signCall_lab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/blacklist_lab_layout">
+                    <TextView android:textColor="@color/gray2" android:id="@id/title_signCall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signCall_lab_version" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/gray2" android:id="@id/updateTime_signCall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/title_signCall" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/note_isUpdating_lab_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/manual_update_lab_title">
+                    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progressBar_manual_update_lab" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small" />
+                    <TextView android:textColor="@color/gray2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/is_updating_note_text" />
+                </LinearLayout>
+                <TextView android:textSize="19.0dip" android:textColor="@color/blue_btn" android:gravity="center" android:id="@id/button_manual_update_lab" android:background="@drawable/signbtn_bg" android:layout_width="78.0dip" android:layout_height="36.0dip" android:layout_marginRight="8.0dip" android:text="@string/update_text" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/antispamvideolay1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0px" android:layout_marginBottom="5.0px" />
+    <LinearLayout android:gravity="center" android:id="@id/antispamvideostart_setting_guide" android:background="@drawable/antispammaintab_toolbar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/antispamvideoNameOrderLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antispamlocalblack_unchain" android:drawableTop="@drawable/antispamdelete" android:layout_weight="1.0" style="@style/antispammain_tab_bottom" />
+        <Button android:id="@id/antispamvideoAppraiseLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antispamlocalblack_add" android:drawableTop="@drawable/antispamadd" android:layout_weight="1.0" style="@style/antispammain_tab_bottom" />
+        <Button android:id="@id/antispamvideoAppSizeLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antispamlocalblack_upload" android:drawableTop="@drawable/antispamupload" android:layout_weight="1.0" style="@style/antispammain_tab_bottom" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/antispamvideostart_setting_guide" android:layout_below="@id/antispamvideolay1">
+        <TextView android:gravity="center" android:id="@id/antispamvideocallempty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ExpandableListView android:id="@id/antispamexpanlist" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

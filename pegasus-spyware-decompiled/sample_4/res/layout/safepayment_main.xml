@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title" />
+    <ScrollView android:id="@id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/paymentapp_parent" android:background="@drawable/safeprotect_item_bg_selector" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                <ImageView android:id="@id/icon_paymentapp" android:layout_width="46.0dip" android:layout_height="68.0dip" android:src="@drawable/safepayment_icon_big" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="20.0dip" android:textColor="@color/black2" android:id="@id/title_paymentapp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/paymentapp" android:layout_toRightOf="@id/icon_paymentapp" android:layout_alignParentTop="true" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/gray2" android:id="@id/detail_paymentapp" android:paddingTop="1.0dip" android:layout_width="180.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/icon_paymentapp" android:layout_below="@id/title_paymentapp" />
+                <ImageView android:id="@id/checkBox_paymentapp" android:clickable="true" android:layout_width="61.0dip" android:layout_height="31.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btn_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/paymentapp_item" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageView3" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="18.0dip" android:src="@drawable/icon_boc" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/imageView1" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_cmb" android:layout_toLeftOf="@id/imageView3" android:layout_alignTop="@id/imageView3" />
+                <ImageView android:id="@id/imageView2" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_icbc" android:layout_toLeftOf="@id/imageView1" android:layout_alignTop="@id/imageView1" />
+                <ImageView android:id="@id/ImageView01" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_tao" android:layout_toRightOf="@id/imageView3" android:layout_alignTop="@id/imageView3" />
+                <ImageView android:id="@id/imageView4" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_jd" android:layout_toRightOf="@id/ImageView01" android:layout_alignTop="@id/ImageView01" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/black2" android:id="@id/textView1" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/payment_message" android:layout_below="@id/imageView3" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="18.0dip" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dian" android:layout_toRightOf="@id/imageView4" android:layout_alignBottom="@id/imageView4" />
+            </RelativeLayout>
+            <TextView android:id="@id/safeinput_title" android:text="@string/inputmethodapp" style="@style/TextBackground" />
+            <RelativeLayout android:id="@id/safeinputmethod_parent" android:background="@drawable/safeprotect_item_bg_selector" android:layout_width="fill_parent" android:layout_height="68.0dip">
+                <ImageView android:id="@id/icon_safeinputmethod" android:layout_width="46.0dip" android:layout_height="68.0dip" android:src="@drawable/safeinput_icon" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="20.0dip" android:textColor="@color/black2" android:id="@id/title_safeinputmethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/safeinputmethod" android:layout_toRightOf="@id/icon_safeinputmethod" android:layout_alignParentTop="true" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/gray2" android:id="@id/detail_safeinputmethod" android:paddingTop="1.0dip" android:layout_width="180.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/icon_safeinputmethod" android:layout_below="@id/title_safeinputmethod" />
+                <ImageView android:id="@id/checkBox_safeinputmethod" android:clickable="true" android:layout_width="61.0dip" android:layout_height="31.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btn_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/safeinput_img" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/safeinput_msg" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/black2" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/safeinput_msg" android:layout_below="@id/imageView5" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

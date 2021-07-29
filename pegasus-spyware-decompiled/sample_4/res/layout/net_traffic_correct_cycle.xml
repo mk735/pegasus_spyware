@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/net_sim_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dip" android:id="@id/net_traffic_auto_correct_sim1_title" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/net_card1" />
+        <View android:background="@drawable/net_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <CheckedTextView android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/net_card_radio_week_sim1" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:checkMark="?android:listChoiceIndicatorSingle" android:text="@string/net_week"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <View android:background="@drawable/net_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <CheckedTextView android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/net_card_radio_ten_sim1" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:checkMark="?android:listChoiceIndicatorSingle" android:text="@string/net_every_ten"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <View android:background="@drawable/net_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <CheckedTextView android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/net_card_radio_cancel_sim1" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:checkMark="?android:listChoiceIndicatorSingle" android:text="@string/net_cancel"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <View android:background="@drawable/net_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/net_sim2_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dip" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/net_card2" />
+        <View android:background="@drawable/net_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <CheckedTextView android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/net_card_radio_week_sim2" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:checkMark="?android:listChoiceIndicatorSingle" android:text="@string/net_week"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <View android:background="@drawable/net_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <CheckedTextView android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/net_card_radio_ten_sim2" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:checkMark="?android:listChoiceIndicatorSingle" android:text="@string/net_every_ten"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <View android:background="@drawable/net_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <CheckedTextView android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/net_card_radio_cancel_sim2" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:checkMark="?android:listChoiceIndicatorSingle" android:text="@string/net_cancel"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+</LinearLayout>

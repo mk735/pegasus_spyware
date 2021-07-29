@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/noti_layout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="@color/black2" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_number" />
+        <EditText android:id="@id/traffic_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/set_traffic_number_hint" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/noti_layout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="@color/black2" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_traffic_code" />
+        <EditText android:id="@id/traffic_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/set_traffic_code_hint" android:inputType="text" />
+    </LinearLayout>
+</LinearLayout>

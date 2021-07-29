@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:background="@drawable/poplistview_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="120.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/popwindow_update" android:background="@drawable/poplistview_item_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_update" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/update" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="120.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/popwindow_set" android:background="@drawable/poplistview_item_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_set" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/set" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="120.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/popwindow_feedback" android:background="@drawable/poplistview_item_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_feedback" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/feedback" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="?android:listDivider" android:layout_width="120.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/popwindow_help" android:background="@drawable/poplistview_item_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_help" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/help" />
+    </LinearLayout>
+    <View android:id="@id/help_divider" android:background="?android:listDivider" android:layout_width="120.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/popwindow_about" android:background="@drawable/poplistview_item_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_about" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/about" />
+    </LinearLayout>
+</LinearLayout>

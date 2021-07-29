@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/antispam_checkbox" android:layout_width="60.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:checked="true" android:src="@drawable/btn_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_toLeftOf="@id/antispam_checkbox" android:layout_alignParentLeft="true">
+        <TextView android:textSize="22.0dip" android:id="@id/antispam_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antispamswitch" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffababab" android:id="@id/antispam_checkboxtxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opend" android:maxLines="2" />
+    </LinearLayout>
+</RelativeLayout>

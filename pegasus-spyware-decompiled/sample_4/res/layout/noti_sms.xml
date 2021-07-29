@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parentPanel" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/noti_layout" android:background="@drawable/dialog_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/atat_safe_icon" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" />
+        <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/title" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="0.0" android:shadowRadius="1.0" />
+        <ProgressBar android:id="@id/noti_progress" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/noti_appinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/app_icon_sms" android:layout_width="@android:dimen/app_icon_size" android:layout_height="@android:dimen/app_icon_size" android:layout_marginLeft="20.0dip" android:layout_marginRight="11.0dip" android:scaleType="fitCenter" />
+            <TextView android:textSize="22.0dip" android:textColor="#ff000000" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/app_name_sms" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" />
+        <ScrollView android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginTop="5.0dip">
+            <EditText android:textColor="#ff454545" android:layout_gravity="center_horizontal" android:id="@id/smscontent" android:background="@android:drawable/edit_text" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:editable="false" />
+        </ScrollView>
+        <LinearLayout android:id="@id/splitline" android:background="@drawable/home_page_drawer_splitline_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/send" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/send_on" android:layout_weight="1.0" style="@style/ButtonText" />
+            <TextView android:id="@id/unsend" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="115.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" style="@style/ButtonText" />
+            <TextView android:id="@id/unsend_report" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/send_off_report" android:layout_weight="1.0" style="@style/ButtonText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

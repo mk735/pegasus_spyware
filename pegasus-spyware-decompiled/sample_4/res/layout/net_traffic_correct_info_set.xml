@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/net_correct_sim_info_title" android:background="@drawable/setting_list_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="15.0dip" android:id="@id/net_correct_sim_info_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_centerVertical="true" />
+        <ImageView android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow1" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_correct_sms_to" />
+        <EditText android:id="@id/net_correct_sms_number" android:background="@android:drawable/edit_text" android:paddingLeft="6.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:numeric="decimal" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/net_card_flag" android:paddingLeft="10.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_correct_sms_content" />
+        <EditText android:id="@id/net_correct_sms_content" android:background="@android:drawable/edit_text" android:paddingLeft="6.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="6" android:numeric="decimal" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="19.0dip" android:textColor="@drawable/home_page_button_healthcheckup_color_selector" android:gravity="center" android:id="@id/net_query_correct_text" android:background="@drawable/signbtn_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" android:text="@string/net_correct_update_config" />
+</LinearLayout>

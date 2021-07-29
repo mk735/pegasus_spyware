@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout1" android:background="@drawable/installer_bg" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="85.0dip">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/appicon" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="#ff464646" android:id="@id/appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="#ffc30202" android:id="@id/virus_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/suggest_uninstall" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_install" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/layout1">
+        <TextView android:textSize="16.0dip" android:textColor="@color/white2" android:gravity="center" android:id="@id/txt_install" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        <FrameLayout android:gravity="center" android:id="@id/layout_installt" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/imageview03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/progressbg" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="center" android:id="@id/imageview04" android:background="@drawable/installprogress" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/defenting_img" android:background="@drawable/defenting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="@color/gray2" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/two_lbtn_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/Complete" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/gray2" android:gravity="center" android:id="@id/btn_install" android:background="@drawable/two_rbtn_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="1.0dip" android:text="@string/run" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_bottom" android:layout_below="@id/layout_install">
+        <RelativeLayout android:id="@id/boot_lin" android:background="@drawable/list_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ffd3d3d3" android:id="@id/boot_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/install_boot_title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/boot_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:checked="true" android:src="@drawable/dark_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff777777" android:id="@id/boot" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:text="@string/install_boot_stitle_on" android:maxLines="2" android:layout_toLeftOf="@id/boot_icon" android:layout_below="@id/boot_title" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/adver_lin" android:background="@drawable/list_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/boot_lin">
+            <TextView android:textSize="14.0dip" android:textColor="#ffd3d3d3" android:id="@id/noti_ttile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/install_adv_title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/noti_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:checked="true" android:src="@drawable/dark_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff777777" android:id="@id/adv" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:text="@string/install_adv_stitle_on" android:maxLines="2" android:layout_toLeftOf="@id/noti_icon" android:layout_below="@id/noti_ttile" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

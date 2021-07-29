@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/antispamlocaladdview_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/title" />
+    <include android:id="@id/antispamtableadd_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/antispamlocaladdview_title" layout="@layout/antispamtwo_button" />
+    <LinearLayout android:id="@id/antispamlay2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/antispamtableadd_header" />
+    <LinearLayout android:gravity="center" android:id="@id/antispamadd_start_setting_guide" android:background="@drawable/buttom_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/antispamadd_AppraiseLinearLayout" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="136.0dip" android:layout_height="40.0dip" android:text="@string/antispamlocalblack_add" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/antispamadd_start_setting_guide" android:layout_below="@id/antispamlay2">
+        <TextView android:gravity="center" android:id="@id/antispamaddempty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/antispamlocalblack_hasNoData" />
+        <ListView android:id="@id/listadd_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#ffeeeeee" android:divider="@drawable/rf_perf_toast_split" android:dividerHeight="2.0dip" />
+    </LinearLayout>
+</RelativeLayout>

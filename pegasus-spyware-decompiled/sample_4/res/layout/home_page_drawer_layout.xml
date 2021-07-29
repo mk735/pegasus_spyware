@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:panel="http://schemas.android.com/apk/res/com.lenovo.safecenter">
+    <com.lenovo.safecenter.utils.Panel android:id="@id/bottomDrawer" android:layout_width="fill_parent" android:layout_height="wrap_content" panel:animationDuration="400" panel:position="bottom" panel:handle="@id/panelHandle" panel:content="@id/panelContent" panel:hideContent="@id/panelHideContent" panel:linearFlying="true" panel:openedHandle="@drawable/index_button_pull_down" panel:closedHandle="@drawable/index_button_pull_up">
+        <FrameLayout android:id="@id/panelHandle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/close_header_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                <ImageView android:id="@id/drawer_down_header" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_box_header" />
+                <ImageView android:id="@id/drawer_up_header" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_box_header" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/open_header_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                <ImageView android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_box_header_open" />
+                <ImageView android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_box_header_open" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/panelContent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <GridView android:id="@id/drawer_up_GridView" android:background="#ffdfdfdf" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:stretchMode="columnWidth" android:numColumns="4" />
+                <LinearLayout android:background="@drawable/dialog_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <GridView android:id="@id/panelHideContent" android:background="#ffdfdfdf" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:stretchMode="columnWidth" android:numColumns="4" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.lenovo.safecenter.utils.Panel>
+</LinearLayout>

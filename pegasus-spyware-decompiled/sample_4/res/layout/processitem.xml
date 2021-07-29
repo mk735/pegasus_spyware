@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/itemImage" android:layout_width="50.0px" android:layout_height="50.0px" android:src="@drawable/icon" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/itemText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemImage" android:layout_centerHorizontal="true" />
+</RelativeLayout>

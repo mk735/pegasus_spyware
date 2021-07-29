@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_flow_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="bottom|center|left" android:id="@id/layout_flow_content" android:background="@drawable/assist_flow_window_bg" android:layout_width="76.0dip" android:layout_height="22.0dip">
+            <FrameLayout android:layout_gravity="center|right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="26.0dip" android:layout_marginRight="4.0dip">
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/float_window_progress" android:layout_width="fill_parent" android:layout_height="15.0dip" android:maxHeight="15.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/assist_float_window_progressbar_style" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:textSize="11.5dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/float_window_flow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/flow_zero" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="center|left" android:id="@id/flow_window_icon_status_net" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/assist_flow_wifi" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/flow_window_interruption_free_container" android:visibility="gone" android:layout_width="82.0dip" android:layout_height="32.0dip">
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/flow_window_interruption_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/assist_flow_window_close" />
+        </FrameLayout>
+    </FrameLayout>
+    <ViewStub android:id="@id/flow_window_dialog_viewstub" android:layout="@layout/assist_flow_window_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

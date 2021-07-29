@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mem4x1_background" android:layout_width="wrap_content" android:layout_height="95.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/mem_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/mem_safecenter" android:background="@drawable/icon" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff454545" android:layout_width="55.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:text="@string/safecenter" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/apps" android:background="@drawable/mem4x1_app_background" android:layout_width="154.0dip" android:layout_height="58.0dip" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/mem_icon" android:layout_alignParentTop="true">
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/apps_text" android:background="@drawable/mem4x1_app_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/toast_mem_no" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="1.0dip">
+            <ImageView android:id="@id/image00" android:layout_width="26.0dip" android:layout_height="26.0dip" />
+            <ImageView android:id="@id/image01" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="3.0dip" />
+            <ImageView android:id="@id/image02" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="3.0dip" />
+            <ImageView android:id="@id/image03" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="3.0dip" />
+            <ImageView android:id="@id/image04" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="3.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip">
+            <ImageView android:id="@id/image05" android:layout_width="26.0dip" android:layout_height="26.0dip" />
+            <ImageView android:id="@id/image06" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="3.0dip" />
+            <ImageView android:id="@id/image07" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="3.0dip" />
+            <ImageView android:id="@id/image08" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="3.0dip" />
+            <ImageView android:id="@id/image09" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/clearBtn" android:background="@drawable/mem4x1_clean" android:layout_width="95.0dip" android:layout_height="37.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/mem_clear" android:layout_toRightOf="@id/apps" android:layout_below="@id/progressbar" android:layout_alignTop="@id/apps" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:id="@id/refreshBtn" android:background="@drawable/mem4x1_refresh" android:layout_width="62.0dip" android:layout_height="30.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="9.0dip" android:layout_toRightOf="@id/apps" android:layout_below="@id/clearBtn">
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="22.0dip" android:text="@string/mem_refresh" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progressbar" android:layout_width="136.0dip" android:layout_height="7.0dip" android:layout_marginTop="10.0dip" android:progressDrawable="@drawable/mem4x1_progress_bg" android:layout_below="@id/apps" android:layout_alignLeft="@id/apps" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textSize="8.0dip" android:textColor="#ff454545" android:id="@id/progressbar_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/progressbar" android:layout_below="@id/apps" android:layout_alignTop="@id/progressbar" />
+    <TextView android:textSize="8.0dip" android:textColor="#ff454545" android:id="@id/progressbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/progressbar" android:layout_alignLeft="@id/progressbar" />
+</RelativeLayout>
