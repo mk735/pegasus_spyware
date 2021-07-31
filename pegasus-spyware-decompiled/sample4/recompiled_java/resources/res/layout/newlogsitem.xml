@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="7dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="33dp">
+    <ImageView android:id="@+id/newlogs_img" android:layout_width="27dp" android:layout_height="27dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12dp" android:id="@+id/newlogs_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16dp" android:id="@+id/newlogs_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:singleLine="true" android:layout_toLeftOf="@+id/newlogs_time" android:layout_toRightOf="@+id/newlogs_img" android:layout_centerVertical="true"/>
+</RelativeLayout>

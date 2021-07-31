@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/antiviruslogtitle" android:visibility="gone" android:layout_alignParentTop="true" layout="@layout/title"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/r1" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight" android:layout_below="@+id/antiviruslogtitle">
+        <ImageView android:id="@+id/antispam_checkbox" android:layout_width="60dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:checked="true" android:src="@drawable/btn_on" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_toLeftOf="@+id/antispam_checkbox" android:layout_alignParentLeft="true">
+            <TextView android:textSize="18dp" android:textColor="@color/black2" android:id="@+id/antispam_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antispamswitch"/>
+            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/antispam_checkboxtxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opend" android:maxLines="2"/>
+        </LinearLayout>
+        <View android:id="@+id/divider" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/layout"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/r2" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight" android:layout_below="@+id/r1">
+        <ImageView android:id="@+id/antispam_checkbox1" android:layout_width="60dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:checked="true" android:src="@drawable/btn_on" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_toLeftOf="@+id/antispam_checkbox1" android:layout_alignParentLeft="true">
+            <TextView android:textSize="18dp" android:textColor="@color/black2" android:id="@+id/antispam_txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antispamswitch"/>
+            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/antispam_checkboxtxt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opend" android:maxLines="2"/>
+        </LinearLayout>
+        <View android:id="@+id/divider1" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/layout1"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/r3" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight" android:layout_below="@+id/r2">
+        <ImageView android:id="@+id/antispam_checkbox3" android:layout_width="60dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:checked="true" android:src="@drawable/btn_on" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_toLeftOf="@+id/antispam_checkbox1" android:layout_alignParentLeft="true">
+            <TextView android:textSize="18dp" android:textColor="@color/black2" android:id="@+id/antispam_txt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/anti_setcouldbtitle"/>
+            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/antispam_checkboxtxt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/anti_setcouldstitle" android:maxLines="2"/>
+        </LinearLayout>
+        <View android:id="@+id/divider3" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/layout3"/>
+    </RelativeLayout>
+</RelativeLayout>

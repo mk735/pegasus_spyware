@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/antitheft_safephone_title" layout="@layout/title"/>
+    <include layout="@layout/unroot_tip"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/guest_icon" android:layout_centerVertical="true"/>
+        <Button android:id="@+id/mode_switch" android:background="@drawable/btn_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_toLeftOf="@+id/mode_switch" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true">
+            <TextView android:textColor="@color/black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hide_contacts"/>
+            <TextView android:textColor="@color/black4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/hide_sms"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:text="@string/hide_app" style="@style/TextBackground"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/guestmode_set" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/guest_mode_des"/>
+        <TextView android:textColor="#ffff0000" android:id="@+id/guestmode_tip" android:background="@drawable/guest_mode_bg" android:paddingLeft="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guestmode_tip" android:layout_below="@+id/guestmode_set"/>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/guestmode_tip">
+            <ProgressBar android:id="@+id/guest_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ListView android:id="@+id/guestmode_list" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#ffeeeeee" android:divider="@drawable/space_line" android:layout_below="@+id/guestmode_tip"/>
+    </RelativeLayout>
+</LinearLayout>

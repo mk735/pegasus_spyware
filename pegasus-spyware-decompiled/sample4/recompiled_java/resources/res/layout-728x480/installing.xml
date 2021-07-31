@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/black6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout1" android:background="@drawable/installer_bg" android:paddingTop="32dp" android:layout_width="match_parent" android:layout_height="150dp">
+        <ImageView android:id="@+id/app_icon" android:layout_width="56dp" android:layout_height="56dp"/>
+        <TextView android:textSize="16dp" android:textColor="#ff464646" android:id="@+id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:shadowColor="#ffffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1"/>
+        <TextView android:textSize="16dp" android:textColor="#ff000000" android:id="@+id/repalce_warning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/replace_tip_title" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/layout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout1">
+        <FrameLayout android:orientation="vertical" android:id="@+id/frameLayout_scan" android:layout_width="match_parent" android:layout_height="48dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/checkresult_scan" android:background="@drawable/scanning" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="center"/>
+            <TextView android:textSize="16dp" android:textColor="@color/white2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checking_virus"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/layout_scan" android:background="#ff2f2f2f" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+            <ImageView android:id="@+id/checkresult_icon" android:background="@drawable/scanning" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="16dp" android:textColor="@color/white2" android:id="@+id/checkresult_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checking_virus"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/virus_detail_view" android:background="@drawable/detai_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_scan">
+            <LinearLayout android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textColor="@color/white2" android:id="@+id/virus_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/virus_name"/>
+                <TextView android:textSize="12dp" android:textColor="@color/white2" android:id="@+id/virus_risk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/virus_risk"/>
+                <TextView android:textSize="12dp" android:textColor="@color/white2" android:ellipsize="end" android:id="@+id/virus_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/virus_detail" android:singleLine="true"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/virus_detail_img" android:background="@drawable/arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/bottom_img" android:background="@drawable/bottom_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/defenting_img" android:background="@drawable/defenting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="10dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="@color/gray2" android:gravity="center" android:id="@+id/btn_cancel" android:background="@drawable/two_lbtn_bg" android:layout_width="0dp" android:layout_height="48dp" android:text="@string/cancel" android:layout_weight="1"/>
+            <TextView android:textSize="14dp" android:textColor="@color/gray2" android:gravity="center" android:id="@+id/btn_install" android:background="@drawable/two_rbtn_bg" android:layout_width="0dp" android:layout_height="48dp" android:layout_marginLeft="1dp" android:text="@string/install" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layout_bottom" android:layout_below="@+id/layout2">
+        <RelativeLayout android:id="@+id/layout3" android:background="@drawable/list_bg" android:paddingLeft="20dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="14dp" android:textColor="@color/white2" android:id="@+id/txt_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_perm" android:layout_centerVertical="true"/>
+            <TextView android:textSize="14dp" android:textColor="@color/white2" android:gravity="center" android:id="@+id/btn_detail" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/detail_text" android:drawableRight="@drawable/permission_detail" android:drawablePadding="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/install_replace" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18dp" android:textColor="@color/white2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/replace_tip_title"/>
+            <TextView android:textSize="14dp" android:textColor="@color/white2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/replace_tip"/>
+        </LinearLayout>
+        <ScrollView android:id="@+id/scrollview" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/perm_detail_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/privacy_layout" android:background="@drawable/list_bg" android:paddingLeft="20dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="14dp" android:textColor="@color/white2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/perm_privacy_info"/>
+                        <TextView android:textSize="12dp" android:textColor="#ff777777" android:id="@+id/privacy_perm_detail" android:paddingTop="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@+id/changepri_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/privacy_img" android:background="@drawable/dark_on" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/location_layout" android:background="@drawable/list_bg" android:paddingLeft="20dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                    <TextView android:textSize="14dp" android:textColor="@color/white2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/get_phoneloc" android:layout_centerVertical="true"/>
+                    <LinearLayout android:gravity="center" android:id="@+id/changeloc_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/location_img" android:background="@drawable/dark_on" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/record_layout" android:background="@drawable/list_bg" android:paddingLeft="20dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                    <TextView android:textSize="14dp" android:textColor="@color/white2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/perm_tap_calling" android:layout_centerVertical="true"/>
+                    <LinearLayout android:gravity="center" android:id="@+id/changerecord_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/record_img" android:background="@drawable/dark_on" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/call_layout" android:background="@drawable/list_bg" android:paddingLeft="20dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                    <TextView android:textSize="14dp" android:textColor="@color/white2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/perm_call" android:layout_centerVertical="true"/>
+                    <LinearLayout android:gravity="center" android:id="@+id/changecall_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/call_img" android:background="@drawable/dark_on" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/sendmsg_layout" android:background="@drawable/list_bg" android:paddingLeft="20dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                    <TextView android:textSize="14dp" android:textColor="@color/white2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/perm_send_sms" android:layout_centerVertical="true"/>
+                    <LinearLayout android:gravity="center" android:id="@+id/changemsg_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/sendmsg_img" android:background="@drawable/dark_on" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:textSize="14dp" android:textColor="@color/white2" android:id="@+id/sendmsg_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/allow"/>
+                        <ImageView android:id="@+id/sendmsg_img_arrow" android:background="@drawable/arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

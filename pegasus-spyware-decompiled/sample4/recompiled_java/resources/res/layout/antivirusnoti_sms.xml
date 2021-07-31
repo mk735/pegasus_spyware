@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+    <TextView android:textSize="22dp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/antivirussmstitle" android:background="@drawable/dialog_title_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/antivirusvirus_notify" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1" android:shadowDy="0" android:shadowRadius="1"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/antivirusapp_icon_sms" android:layout_width="@android:dimen/app_icon_size" android:layout_height="@android:dimen/app_icon_size" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="11dp" android:scaleType="fitCenter"/>
+            <TextView android:textSize="18dp" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/antivirusapp_name_sms" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5dp" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" style="@style/DialogText"/>
+        </LinearLayout>
+        <TextView android:textSize="16dp" android:gravity="center_vertical" android:id="@+id/antivirusvirus_notifyname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:shadowColor="#ffffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" style="@style/DialogText"/>
+        <TextView android:textSize="16dp" android:gravity="center_vertical" android:id="@+id/antivirusvirus_notifyadvice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:shadowColor="#ffffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" style="@style/DialogText"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16dp" android:gravity="center_vertical" android:id="@+id/antivirusdes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:shadowColor="#ffffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" style="@style/DialogText"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <Button android:id="@+id/antivirusunsent" android:background="@drawable/signbtn_bg" android:layout_width="136dp" android:layout_height="40dp" android:text="@string/antivirusappvirus_nodeal" android:layout_weight="1" style="@style/ButtonText"/>
+                    <Button android:id="@+id/antivirussend" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="136dp" android:layout_height="40dp" android:text="@string/antivirusapp_uninstall" android:layout_weight="1" style="@style/ButtonText"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

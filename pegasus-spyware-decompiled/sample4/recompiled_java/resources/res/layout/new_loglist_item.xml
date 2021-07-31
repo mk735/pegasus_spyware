@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/log_time" android:background="@drawable/listseparatorbg" android:visibility="gone" style="@style/TextBackground"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/log_layout" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/event_layout" android:layout_width="68dp" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+            <ImageView android:id="@+id/package_icon" android:layout_width="36dp" android:layout_height="36dp"/>
+            <TextView android:textSize="12dp" android:textColor="@color/black4" android:id="@+id/event_package" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                <TextView android:textSize="15dp" android:id="@+id/event_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="15dp" android:textColor="@color/black1" android:id="@+id/event_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/event_action" android:layout_alignParentLeft="true"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/upload_icon" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_toLeftOf="@+id/event_action"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp">
+                <TextView android:textSize="12dp" android:id="@+id/event_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:singleLine="true" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="12dp" android:id="@+id/event_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/event_timestamp" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="12dp" android:textColor="#ffababab" android:id="@+id/event_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:layout_below="@+id/event_number"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

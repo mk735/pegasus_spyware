@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/changename_title" android:key="changename"/>
+    <Preference android:title="@string/changeimage_title" android:key="changeimg"/>
+    <PreferenceCategory android:title="@string/smsmodesetting">
+        <Preference android:title="@string/smsnotifymode_title" android:key="smsnotifymode"/>
+        <Preference android:title="@string/callnotify" android:key="smsnotify"/>
+        <Preference android:title="@string/smsimg_notify" android:key="smsimg"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/callmodesetting">
+        <Preference android:title="@string/callnotifymode_title" android:key="callnotifymode"/>
+        <Preference android:title="@string/replymes_title" android:key="replymes"/>
+        <Preference android:title="@string/callimg_notify" android:key="callimg"/>
+        <Preference android:title="@string/callnotify" android:key="callnotify"/>
+    </PreferenceCategory>
+</PreferenceScreen>

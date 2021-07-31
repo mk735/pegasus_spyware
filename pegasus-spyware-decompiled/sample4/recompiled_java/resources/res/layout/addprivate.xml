@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/sms_framelayout" android:visibility="gone" layout="@layout/title"/>
+    <LinearLayout android:gravity="center" android:id="@+id/safemode_lin_operate" android:background="@drawable/buttom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <EditText android:gravity="left" android:id="@+id/safemode_send_textview" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/send_smshint" android:maxLines="6" android:minLines="5" android:layout_weight="6"/>
+        <Button android:id="@+id/safemode_operat_btn" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add"/>
+        <Button android:id="@+id/safemode_operat_btn1" android:background="@drawable/home_page_button_healthcheckup_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/replay_sms_card2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/safemode_list_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/safemode_lin_operate" android:layout_below="@+id/sms_framelayout">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1">
+            <ListView android:id="@+id/safemode_log_list" android:layout_width="match_parent" android:layout_height="match_parent" android:drawSelectorOnTop="false" android:cacheColorHint="#ffeeeeee" android:divider="@drawable/rf_perf_toast_split" android:dividerHeight="2dp"/>
+            <TextView android:textSize="14dp" android:gravity="center" android:id="@+id/safemode_empty_textview" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_record"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

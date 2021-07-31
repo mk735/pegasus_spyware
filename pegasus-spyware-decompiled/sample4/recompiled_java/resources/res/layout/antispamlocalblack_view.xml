@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/antispamwsss" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/antispamlocalblackview_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title"/>
+    <LinearLayout android:id="@+id/antispamlay1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_below="@+id/antispamlocalblackview_title"/>
+    <LinearLayout android:gravity="center" android:id="@+id/antispamstart_setting_guide" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:id="@+id/manblack_signline" android:background="@drawable/buttom_bg" android:layout_width="match_parent" android:layout_height="60dp">
+            <Button android:id="@+id/sigleadd_btn" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="136dp" android:layout_height="40dp" android:text="@string/antispamlocalblack_add"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/manblack_doubleline" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+            <Button android:id="@+id/antispamNameOrderLinearLayout" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="@string/antispamlocalblack_unchain" android:layout_weight="1"/>
+            <Button android:id="@+id/antispamAppraiseLinearLayout" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginRight="12dp" android:text="@string/antispamlocalblack_add" android:layout_weight="1"/>
+            <Button android:id="@+id/antispamAppSizeLinearLayout" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginRight="12dp" android:text="@string/antispamlocalblack_upload" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/antispamstart_setting_guide" android:layout_below="@+id/antispamlay1">
+        <TextView android:id="@+id/antispamcallempty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antispamno_interceptsms_record" android:layout_centerInParent="true"/>
+        <ExpandableListView android:id="@+id/addblacklist" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#ffeeeeee"/>
+    </RelativeLayout>
+</RelativeLayout>

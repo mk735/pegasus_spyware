@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="24dp">
+        <TextView android:textSize="13dp" android:textColor="#ff878787" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/white_list_lock_benefit"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/progress_bar" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/layout_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15dp" android:textColor="#ff878787" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/text_add_app_empty"/>
+    </LinearLayout>
+    <ListView android:id="@+id/ignoreList" android:focusable="true" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fastScrollEnabled="true"/>
+    <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

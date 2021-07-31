@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="ic_launcher" id="2130837504" />
+    <public type="drawable" name="violet" id="2130837505" />
+    <public type="drawable" name="semi_black" id="2130837506" />
+    <public type="layout" name="skeleton_activity" id="2130903040" />
+    <public type="color" name="red" id="2130968576" />
+    <public type="string" name="skeleton_app" id="2131034112" />
+    <public type="string" name="back" id="2131034113" />
+    <public type="string" name="clear" id="2131034114" />
+    <public type="string" name="main_label" id="2131034115" />
+    <public type="string" name="cat" id="2131034116" />
+    <public type="style" name="ActionButton" id="2131099648" />
+    <public type="style" name="TextAppearance" id="2131099649" />
+    <public type="style" name="TextAppearance.ActionButton" id="2131099650" />
+    <public type="id" name="editor" id="2131165184" />
+    <public type="id" name="phoneNumber" id="2131165185" />
+    <public type="id" name="smsBody" id="2131165186" />
+    <public type="id" name="back" id="2131165187" />
+    <public type="id" name="clear" id="2131165188" />
+    <public type="id" name="chooseContact" id="2131165189" />
+    <public type="id" name="send" id="2131165190" />
+</resources>

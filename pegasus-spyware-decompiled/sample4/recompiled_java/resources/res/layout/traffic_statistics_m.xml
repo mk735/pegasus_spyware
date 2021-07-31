@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <TextView android:id="@+id/net_single_notification_text" android:background="@drawable/notification_text" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="24dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/net_single_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/net_traffic_background2"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/net_traffic_anti" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/net_traffic_free_flag"/>
+                <TextView android:textSize="30dp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/net_traffic_free_anti_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/iv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/net_traffic_background"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <RelativeLayout android:layout_width="160dp" android:layout_height="wrap_content">
+                <TextView android:textSize="16dp" android:textColor="#ff7a7a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_today_used"/>
+                <TextView android:textSize="16dp" android:id="@+id/net_single_today_used" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textSize="16dp" android:textColor="#ff7a7a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/month_used"/>
+                <TextView android:textSize="16dp" android:id="@+id/net_single_month_used" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/net_single_month_free_parent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textSize="16dp" android:textColor="#ff7a7a7a" android:id="@+id/net_month_free_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_month_free"/>
+                <TextView android:textSize="16dp" android:id="@+id/net_single_month_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="19dp" android:textColor="@drawable/home_page_button_healthcheckup_color_selector" android:gravity="center" android:id="@+id/net_single_set_package" android:background="@drawable/home_page_button_healthcheckup_selector" android:clickable="true" android:layout_width="152dp" android:layout_height="36dp" android:layout_marginTop="8dp" android:layout_marginBottom="5dp" android:text="@string/net_set_traffic_package"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/notification_text" android:layout_width="match_parent" android:layout_height="24dp">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/net_traffic_day_detail"/>
+    </LinearLayout>
+    <HorizontalScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/above_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View android:background="@drawable/net_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/net_intent_netfilter" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:minHeight="?android:attr/listPreferredItemHeight">
+        <ImageView android:id="@+id/net_app_manager_icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="16dp" android:layout_marginRight="8dp" android:src="@drawable/net_app_manager_icon" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/net_app_manager_new_feature_icon" android:paddingTop="0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/lesafe_new_feture_icon"/>
+        <TextView android:textSize="20dp" android:id="@+id/net_app_manager" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/net_app_manager" android:layout_toRightOf="@+id/net_app_manager_icon" android:layout_centerInParent="true"/>
+        <ImageView android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow1" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:background="@drawable/net_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/floatw1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp">
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/icon"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="4dp" android:layout_marginRight="10dp" android:layout_marginBottom="4dp">
+            <TextView android:textSize="20sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@+id/float_tip_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="#ffbbbbbb" android:gravity="center_horizontal" android:id="@+id/float_progress_scan" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/anti_tap_protect"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

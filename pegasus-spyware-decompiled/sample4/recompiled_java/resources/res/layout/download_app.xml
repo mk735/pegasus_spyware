@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_layout" layout="@layout/title"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="130dp">
+        <TextView android:background="#ffececec" android:layout_width="match_parent" android:layout_height="110dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/icon_layout" android:background="@drawable/downloadappbanner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="13dp" android:layout_marginRight="10dp" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/download_app_img" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/descrip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="40dp" android:textColor="#ff474747" android:layout_gravity="center_horizontal" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="18dp" android:textColor="@color/gray1" android:layout_gravity="center_horizontal" android:id="@+id/tv_descrip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16dp" android:textColor="#ff474747" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16dp" android:textColor="#ff828282" android:id="@+id/download_app_show1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/downloadappleaf" android:drawablePadding="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16dp" android:textColor="#ff828282" android:id="@+id/download_app_show2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/downloadappleaf" android:drawablePadding="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16dp" android:textColor="#ff828282" android:id="@+id/download_app_show3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/downloadappleaf" android:drawablePadding="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16dp" android:textColor="#ff828282" android:id="@+id/download_app_show4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/downloadappleaf" android:drawablePadding="5dp"/>
+    </RelativeLayout>
+    <TextView android:textSize="16dp" android:textColor="@color/red" android:layout_gravity="center_horizontal" android:id="@+id/alert_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16dp" android:textColor="#ff474747" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16dp" android:textColor="@drawable/home_page_button_healthcheckup_color_selector" android:gravity="center" android:id="@+id/download_app_downlink" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+    </RelativeLayout>
+</LinearLayout>

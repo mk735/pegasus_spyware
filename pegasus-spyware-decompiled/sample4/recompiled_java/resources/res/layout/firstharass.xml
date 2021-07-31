@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/harass_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <TextView android:textSize="17dp" android:textColor="@color/black2" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toolbar_appear" android:drawableRight="@drawable/notify_new_sms" android:drawablePadding="5dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black2" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/and" android:drawableRight="@drawable/notify_new_call" android:drawablePadding="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/privacy_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <TextView android:textSize="17dp" android:textColor="@color/black2" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toolbar_appear" android:drawableRight="@drawable/notify_new_privacy" android:drawablePadding="5dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/black2" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/and" android:drawableRight="@drawable/notify_new_tariff" android:drawablePadding="5dp"/>
+    </LinearLayout>
+    <TextView android:textSize="17dp" android:textColor="@color/black2" android:id="@+id/labUpdateNote" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="4dp" android:layout_marginBottom="8dp" android:text="@string/harss_firstdesc"/>
+</LinearLayout>

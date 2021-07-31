@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/widget_onekey" android:background="@android:color/transparent" android:layout_width="60dp" android:layout_height="60dp">
+        <ImageView android:id="@+id/bkg_image" android:background="@drawable/onkey_shutcut_green" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <TextView android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/one_key_widget_clean" android:shadowColor="#ffffffff"/>
+</LinearLayout>

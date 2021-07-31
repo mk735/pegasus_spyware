@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/rf_perf_toast_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2px">
+        <RelativeLayout android:id="@+id/kjjs_layout" android:layout_width="wrap_content" android:layout_height="70px">
+            <ImageView android:id="@+id/allow_app_number_img1" android:layout_width="45px" android:layout_height="45px" android:layout_marginLeft="14px" android:layout_marginTop="5px" android:src="@drawable/rf_perf_toast_kjjs" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="22px" android:textColor="#ff454545" android:id="@+id/alow_app_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13px" android:text="@string/kjjs" android:layout_toRightOf="@+id/allow_app_number_img1"/>
+            <TextView android:textSize="16px" android:textColor="#ff878787" android:id="@+id/alow_app_number_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kjjs" android:layout_below="@+id/alow_app_number" android:layout_alignLeft="@+id/alow_app_number"/>
+        </RelativeLayout>
+        <ImageView android:background="@drawable/rf_perf_toast_split" android:layout_width="250px" android:layout_height="wrap_content" android:maxWidth="100px"/>
+        <RelativeLayout android:id="@+id/znql_layout" android:layout_width="wrap_content" android:layout_height="70px" android:layout_marginTop="4px" android:layout_marginRight="10px">
+            <ImageView android:id="@+id/allow_app_number_img2" android:layout_width="45px" android:layout_height="45px" android:layout_marginLeft="14px" android:layout_marginTop="5px" android:src="@drawable/rf_perf_toast_znql" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="22px" android:textColor="#ff454545" android:id="@+id/auto_app_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13px" android:text="@string/mem_clear" android:layout_toRightOf="@+id/allow_app_number_img2" android:layout_alignTop="@+id/allow_app_number_img2"/>
+            <TextView android:textSize="16px" android:textColor="#ff878787" android:id="@+id/auto_app_stop_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/auto_app_stop" android:layout_alignLeft="@+id/auto_app_stop"/>
+        </RelativeLayout>
+        <ImageView android:background="@drawable/rf_perf_toast_split" android:layout_width="250px" android:layout_height="wrap_content" android:maxWidth="100px"/>
+        <ImageView android:background="@drawable/rf_perf_toast_split" android:layout_width="250px" android:layout_height="wrap_content" android:maxWidth="100px"/>
+    </LinearLayout>
+</FrameLayout>

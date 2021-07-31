@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/tabhost" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tab_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentBottom="true"/>
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@android:id/tabs"/>
+    </RelativeLayout>
+</TabHost>

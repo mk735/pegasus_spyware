@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/antiviruslogtitle" android:visibility="gone" layout="@layout/title"/>
+    <LinearLayout android:gravity="center" android:id="@+id/dealvirus_btn" android:background="@drawable/buttom_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/antivirusbtn_clean_logs" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="136dp" android:layout_height="40dp" android:text="@string/clean_log"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/dealvirus_btn" android:layout_below="@+id/antiviruslogtitle">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/antiviruslog_txt_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antivirusnologdate"/>
+        </LinearLayout>
+        <ListView android:id="@+id/antiviruslog_listview" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#ffeeeeee"/>
+    </RelativeLayout>
+</RelativeLayout>

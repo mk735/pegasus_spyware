@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ExpandableListView android:id="@+id/expandListView_record" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#ffeeeeee" android:divider="@drawable/divider"/>
+        <RelativeLayout android:layout_gravity="center" android:id="@+id/record_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="#ffababab" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_have_no_yet" android:drawablePadding="10dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <ImageView android:id="@+id/divide_record_clearn" android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:id="@+id/layout_record_clearn" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:gravity="center" android:id="@+id/record_clear_all" android:background="@drawable/signbtn_bg" android:layout_width="146dp" android:layout_height="38dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/record_button_clear"/>
+    </LinearLayout>
+</LinearLayout>

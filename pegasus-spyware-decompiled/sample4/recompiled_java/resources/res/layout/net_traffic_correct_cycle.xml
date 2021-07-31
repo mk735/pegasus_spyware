@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/net_sim_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20dp" android:id="@+id/net_traffic_auto_correct_sim1_title" android:paddingLeft="6dp" android:layout_width="match_parent" android:layout_height="34dp" android:text="@string/net_card1"/>
+        <View android:background="@drawable/net_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckedTextView android:textSize="18dp" android:gravity="center_vertical" android:id="@+id/net_card_radio_week_sim1" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="40dp" android:checkMark="?android:attr/listChoiceIndicatorSingle" android:text="@string/net_week"/>
+        <View android:background="@drawable/net_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckedTextView android:textSize="18dp" android:gravity="center_vertical" android:id="@+id/net_card_radio_ten_sim1" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="40dp" android:checkMark="?android:attr/listChoiceIndicatorSingle" android:text="@string/net_every_ten"/>
+        <View android:background="@drawable/net_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckedTextView android:textSize="18dp" android:gravity="center_vertical" android:id="@+id/net_card_radio_cancel_sim1" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="40dp" android:checkMark="?android:attr/listChoiceIndicatorSingle" android:text="@string/net_cancel"/>
+    </LinearLayout>
+    <View android:background="@drawable/net_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/net_sim2_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20dp" android:paddingLeft="6dp" android:layout_width="match_parent" android:layout_height="34dp" android:text="@string/net_card2"/>
+        <View android:background="@drawable/net_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckedTextView android:textSize="18dp" android:gravity="center_vertical" android:id="@+id/net_card_radio_week_sim2" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="40dp" android:checkMark="?android:attr/listChoiceIndicatorSingle" android:text="@string/net_week"/>
+        <View android:background="@drawable/net_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckedTextView android:textSize="18dp" android:gravity="center_vertical" android:id="@+id/net_card_radio_ten_sim2" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="40dp" android:checkMark="?android:attr/listChoiceIndicatorSingle" android:text="@string/net_every_ten"/>
+        <View android:background="@drawable/net_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <CheckedTextView android:textSize="18dp" android:gravity="center_vertical" android:id="@+id/net_card_radio_cancel_sim2" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="40dp" android:checkMark="?android:attr/listChoiceIndicatorSingle" android:text="@string/net_cancel"/>
+    </LinearLayout>
+</LinearLayout>

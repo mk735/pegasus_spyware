@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <RelativeLayout android:id="@+id/monthLimitSMSLayout" android:background="@drawable/safeprotect_item_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="68dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="18dp" android:id="@+id/month_layout1" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sms_month_limit_setting_text"/>
+            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/monthLimitSMS" android:paddingLeft="10dp" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/safeprotect_item_bg_selector" android:layout_width="match_parent" android:layout_height="68dp">
+        <TextView android:textSize="18dp" android:id="@+id/txt_monthWarmSMSSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/sms_month_warm_text" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/monthWarmSMSSwitch" android:layout_width="60dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:checked="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/parentPanel" android:layout_width="200dp" android:layout_height="wrap_content">
+    <TextView android:textSize="18dp" android:textColor="@color/black2" android:gravity="center_vertical" android:id="@+id/des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="4dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp" android:text="@string/mod_traffic_des"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/noti_layout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18dp" android:textColor="@color/black2" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/month_used"/>
+        <EditText android:id="@+id/traffic_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="6" android:numeric="decimal" android:layout_weight="1"/>
+        <TextView android:textColor="@color/black2" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m"/>
+    </LinearLayout>
+</LinearLayout>

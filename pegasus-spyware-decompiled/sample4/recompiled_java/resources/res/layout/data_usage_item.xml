@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/app_dis_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+        <ImageView android:id="@+id/net_app_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:src="@drawable/icon" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/net_app_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/net_app_icon"/>
+            <ImageView android:id="@+id/net_app_check_wlan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_alignBottom="@+id/net_app_icon"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="100dp" android:layout_toRightOf="@+id/net_app_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="14dp" android:id="@+id/net_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/net_app_icon">
+                <TextView android:textSize="12dp" android:id="@+id/net_app_total" android:layout_width="80dp" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12dp" android:id="@+id/net_app_total_wlan" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/item_choose_layout" android:background="@drawable/notification_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/item_allow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+            <TextView android:textSize="12dp" android:textColor="#ff4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_traffic_mobile_fore_data_text"/>
+            <TextView android:textSize="12dp" android:textColor="#ff4a4a4a" android:id="@+id/net_fore_traffic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/item_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true">
+            <TextView android:textSize="12dp" android:textColor="#ff4a4a4a" android:id="@+id/net_traffic_wlan_fore_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_traffic_wlan_fore_data_text"/>
+            <TextView android:textSize="12dp" android:textColor="#ff4a4a4a" android:id="@+id/net_fore_traffic_wlan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/item_allow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_below="@+id/item_allow">
+            <TextView android:textSize="12dp" android:textColor="#ff4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_traffic_mobile_back_data_text"/>
+            <TextView android:textSize="12dp" android:textColor="#ffd66500" android:id="@+id/net_back_traffic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/item_tip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/item_tip" android:layout_alignLeft="@+id/item_tip" android:layout_alignParentRight="true">
+            <TextView android:textSize="12dp" android:textColor="#ff4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_traffic_wlan_back_data_text"/>
+            <TextView android:textSize="12dp" android:textColor="#ffd66500" android:id="@+id/net_back_traffic_wlan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

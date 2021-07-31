@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/input_privacy_pwd"/>
+    <EditText android:id="@+id/input_pwd" android:background="@android:drawable/edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:password="true" android:singleLine="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="15px" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_ok" android:layout_width="100px" android:layout_height="wrap_content" android:text="@string/ok"/>
+        <Button android:id="@+id/btn_cancel" android:paddingLeft="15px" android:layout_width="100px" android:layout_height="wrap_content" android:text="@string/cancel"/>
+    </LinearLayout>
+</LinearLayout>

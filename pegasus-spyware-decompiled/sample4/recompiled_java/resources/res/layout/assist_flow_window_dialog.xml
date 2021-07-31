@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_float_interrpt_free_setting_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/float_window_interrupt_setting_bg" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+        <TextView android:textSize="16dp" android:id="@+id/float_dialog_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="8dp" android:layout_marginRight="4dp" android:shadowColor="#ffffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" style="@style/DialogText"/>
+        <CheckBox android:id="@+id/float_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="4dp" android:button="@drawable/assist_selector_checkbox" android:text="@string/float_window_dialog_remember"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <Button android:textSize="15sp" android:id="@+id/float_btn_right" android:padding="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="0.5" android:layout_weight="1" style="@style/NegativeButtonText"/>
+            <Button android:textSize="15sp" android:id="@+id/float_btn_left" android:padding="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="0.5" android:layout_weight="1" style="@style/NegativeButtonText"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

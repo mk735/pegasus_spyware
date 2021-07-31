@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/antispam_mainlin22" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ff6baa2d" android:id="@+id/antispam_harssdesc1" android:background="@drawable/blue_harass" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/h_del1"/>
+        <TextView android:textColor="#ff4a4a4a" android:id="@+id/antispam_harssdesc" android:background="@drawable/notification_text" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/antispam_mainlin2" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="48dp" android:layout_below="@+id/antispam_mainlin22">
+        <LinearLayout android:gravity="center" android:id="@+id/antispam_smslin" android:background="@drawable/tab_select" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/antispam_smsicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antispam_smsnormal"/>
+            <TextView android:textSize="18dp" android:gravity="center" android:id="@+id/antispam_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/harass_sms"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/antispam_calllin" android:background="@drawable/tab_normal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/antispam_callicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antispam_callnormal"/>
+            <TextView android:textSize="18dp" android:gravity="center" android:id="@+id/antispam_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/harass_phone"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/antispam_mainlin3" android:background="@drawable/antivirus_item_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/sign_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/sign" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20dp" android:gravity="center" android:id="@+id/antispam_signdesc" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/safecenter" android:layout_toRightOf="@+id/sign_main"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/signgo" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/antispam_mainlin3" android:layout_below="@+id/antispam_mainlin2">
+        <ExpandableListView android:id="@+id/antispam_logs" android:background="@drawable/listview_normal" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#ffeeeeee"/>
+        <TextView android:textSize="16dp" android:textColor="#ff2b2b2b" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/antispam_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/antispamsmswhite_hasNoData"/>
+    </LinearLayout>
+</RelativeLayout>

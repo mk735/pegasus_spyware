@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@drawable/notify_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:background="@drawable/icon" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/notify_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="18dp" android:textColor="@color/black1" android:id="@+id/txt_lesec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/safecenter_ad_clearn"/>
+        <TextView android:textSize="12dp" android:textColor="@color/red" android:ellipsize="end" android:id="@+id/intercept_notify_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textColor="@drawable/home_page_button_healthcheckup_color_selector" android:gravity="center" android:background="@drawable/home_page_healthcheckup_button_normal" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@string/notification_intercept_manage" android:shadowColor="#ffe5ffbc" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1"/>
+</LinearLayout>

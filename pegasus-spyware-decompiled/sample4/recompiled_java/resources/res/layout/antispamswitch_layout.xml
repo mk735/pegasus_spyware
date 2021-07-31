@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="85px">
+    <LinearLayout android:orientation="vertical" android:id="@+id/antispamheader_lin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12px" android:layout_centerVertical="true">
+        <TextView android:textSize="22dp" android:id="@+id/antispamtxt_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/antispamimg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/antispamlog_layoutcall" android:background="@drawable/antispambg2_normal" android:visibility="gone" android:layout_width="85px" android:layout_height="55px" android:layout_marginRight="15px" android:layout_toLeftOf="@+id/antispamimg_title" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/antispamimg_log1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="28px" android:id="@+id/antispamtxt_log1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/antispamlog_layoutsms" android:background="@drawable/antispambg2_normal" android:visibility="gone" android:layout_width="85px" android:layout_height="55px" android:layout_toLeftOf="@+id/antispamlog_layoutcall" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/antispamimg_log" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="28dp" android:id="@+id/antispamtxt_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7px"/>
+    </LinearLayout>
+</RelativeLayout>

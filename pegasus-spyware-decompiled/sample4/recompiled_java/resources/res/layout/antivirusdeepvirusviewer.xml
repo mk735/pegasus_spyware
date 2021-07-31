@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/antivirusdeepvirusviewer_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/antivirusdeepreport_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/antivirusdeepreport_layout" android:layout_below="@+id/antivirusdeepvirusviewer_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="true">
+                <ImageView android:layout_gravity="bottom" android:id="@+id/antivirusdeepimage_icon" android:layout_width="25dp" android:layout_height="25dp" android:scaleType="fitCenter"/>
+                <TextView android:textSize="18dp" android:id="@+id/antivirusdeeptext_showtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:maxLines="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20px" android:baselineAligned="true">
+                <TextView android:textSize="18dp" android:id="@+id/antivirusdeeptext_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textSize="18dp" android:id="@+id/antivirusdeeptext_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5px" android:maxLines="1" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20px" android:baselineAligned="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_weight="1">
+                    <TextView android:textSize="18dp" android:id="@+id/antivirusdeeptext_virusstate" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                    <TextView android:textSize="18dp" android:id="@+id/antivirusdeeptext_virusadvice" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_weight="2">
+                    <Button android:textSize="19dp" android:textColor="@drawable/home_page_button_healthcheckup_color_selector" android:id="@+id/antivirusdeepvirusinfo_uninstall" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="80dp" android:layout_height="wrap_content" android:shadowColor="#ffe5ffbc" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="true">
+                <TextView android:text="@string/antivirusvirus_dangerous" style="@style/TextBackground"/>
+                <TextView android:textSize="18dp" android:id="@+id/antivirusdeeptext_info" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/antivirusdeeppermissions_section" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:text="@string/antiviruspermissions_label" style="@style/TextBackground"/>
+                <TextView android:textSize="14dp" android:paddingLeft="6dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/antivirussecurity_settings_desc"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/antivirusdeepsecurity_settings_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

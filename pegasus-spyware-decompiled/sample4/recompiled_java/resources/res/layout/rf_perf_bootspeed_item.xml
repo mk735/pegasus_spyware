@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+    <ImageView android:id="@+id/app_icon" android:src="@drawable/icon3" style="@style/LeemWidget.ListItem.Image"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#ff3d393a" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/app_name" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/text_normal" android:id="@+id/app_suggest" android:paddingLeft="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggest_forbid" android:minEms="4"/>
+    <ImageView android:id="@+id/itemcheck" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/perm_grant"/>
+</LinearLayout>

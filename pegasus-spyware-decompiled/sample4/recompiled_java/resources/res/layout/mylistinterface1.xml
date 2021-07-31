@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+    <TextView android:textSize="22dp" android:gravity="center" android:id="@+id/bs" android:background="@drawable/white" android:focusable="true" android:layout_width="300px" android:layout_height="50px" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

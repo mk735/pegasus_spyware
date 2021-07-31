@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/antispamsmslayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/antispamrealay01" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="18dp" android:ellipsize="end" android:id="@+id/antispamsmsname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15px" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:ellipsize="end" android:gravity="right" android:id="@+id/antispamsmsnumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="15px" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:layout_below="@+id/antispamrealay01">
+            <TextView android:ellipsize="end" android:id="@+id/antispamsmscontent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15px" android:singleLine="true"/>
+            <TextView android:id="@+id/antispamsmscontent1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15px"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/antispamsmscheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_marginRight="15px" android:src="@drawable/upload" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

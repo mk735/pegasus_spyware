@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="transparent">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="Theme.MyActivity" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+    <style name="AliDialog">
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:popupBackground">@drawable/bg</item>
+        <item name="android:windowSoftInputMode">adjustUnspecified|stateVisible|adjustResize</item>
+    </style>
+    <style name="main_tab_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/home_btn_bg</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="tab_text_style">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+    </style>
+    <style name="Theme.NoTitle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="antispammain_tab_bottom">
+        <item name="android:textSize">@dimen/bottom_tab_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/antispamhome_btn_bg</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="title">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#fff0ffff</item>
+    </style>
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="DialogText">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="DialogText.Title" parent="@style/DialogText">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="NetCheckBox">
+        <item name="android:button">@drawable/add_net_black</item>
+    </style>
+    <style name="PopupAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    <style name="XWindowTitle">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="StatusBarBackground">
+        <item name="android:background">@drawable/title_bg</item>
+    </style>
+    <style name="ButtonText">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">@drawable/home_page_button_healthcheckup_color_selector</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/home_page_button_healthcheckup_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">@null</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="NegativeButtonText">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">@drawable/home_page_button_healthcheckup_color_selector</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/signbtn_bg</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">@null</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="TextBackground">
+        <item name="android:textColor">#ff4a4a4a</item>
+        <item name="android:background">@drawable/notification_text</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="SettingListBackground">
+        <item name="android:background">@drawable/setting_list_bg_selector</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+    </style>
+    <style name="tab_child">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/radio_selector_tab_text</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/selector_tab_btn</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="listview">
+        <item name="android:listSelector">@drawable/selector_list_item</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@drawable/divider</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+    <style name="silde_panel_btn">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/slide_btn_bg</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="silde_panel_btn_noti" parent="@style/silde_panel_btn">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+    <style name="common_edittext_style" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:background">@drawable/edittextitem</item>
+    </style>
+    <style name="btn_gray">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/assist_selector_btn_gray</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="btn_green">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/assist_selector_btn_text</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/assist_selector_btn_green</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/btn_shadow</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+    <style name="Theme_TransparentDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="textAppearanceSmall" parent="@android:style/TextAppearance.Small">
+    </style>
+    <style name="floatwindow_cache">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="toggle_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black2</item>
+    </style>
+    <style name="toggle_summary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffababab</item>
+    </style>
+    <style name="LeemWidget">
+    </style>
+    <style name="LeemWidget.LayoutListTitle" parent="@style/LeemWidget">
+        <item name="android:background">@drawable/rf_perf_list_title</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+    <style name="LeemWidget.TextAppearance" parent="@style/LeemWidget">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">@null</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColorHighlight">?android:attr/textColorHighlight</item>
+        <item name="android:textColorHint">?android:attr/textColorHint</item>
+        <item name="android:textColorLink">?android:attr/textColorLink</item>
+    </style>
+    <style name="LeemWidget.TextAppearance.Large60" parent="@style/LeemWidget.TextAppearance">
+        <item name="android:textSize">60sp</item>
+    </style>
+    <style name="LeemWidget.TextAppearance.Large36" parent="@style/LeemWidget.TextAppearance">
+        <item name="android:textSize">36sp</item>
+    </style>
+    <style name="LeemWidget.TextAppearance.Medium24" parent="@style/LeemWidget.TextAppearance">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="LeemWidget.TextAppearance.Medium22" parent="@style/LeemWidget.TextAppearance">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="LeemWidget.TextAppearance.Medium20" parent="@style/LeemWidget.TextAppearance">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="LeemWidget.TextAppearance.Small18" parent="@style/LeemWidget.TextAppearance">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="LeemWidget.TextAppearance.Small16" parent="@style/LeemWidget.TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="LeemWidget.TextAppearance.Small14" parent="@style/LeemWidget.TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="LeemWidget.TextAppearance.Small10" parent="@style/LeemWidget.TextAppearance">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="LeemWidget.SelfTextAppearance" parent="@style/LeemWidget">
+        <item name="textStyle">@null</item>
+        <item name="textColor">?android:attr/textColorPrimary</item>
+        <item name="textSize">16sp</item>
+        <item name="textColorHighlight">?android:attr/textColorHighlight</item>
+        <item name="textColorHint">?android:attr/textColorHint</item>
+        <item name="textColorLink">?android:attr/textColorLink</item>
+    </style>
+    <style name="LeemWidget.SelfTextAppearance.Large" parent="@style/LeemWidget.SelfTextAppearance">
+        <item name="textSize">22sp</item>
+    </style>
+    <style name="LeemWidget.SelfTextAppearance.Medium" parent="@style/LeemWidget.SelfTextAppearance">
+        <item name="textSize">18sp</item>
+    </style>
+    <style name="LeemWidget.SelfTextAppearance.Small" parent="@style/LeemWidget.SelfTextAppearance">
+        <item name="textColor">?android:attr/textColorSecondary</item>
+        <item name="textSize">14sp</item>
+    </style>
+    <style name="LeemWidget.SelfTextAppearance.SmallSmall" parent="@style/LeemWidget.SelfTextAppearance">
+        <item name="textColor">?android:attr/textColorSecondary</item>
+        <item name="textSize">10sp</item>
+    </style>
+    <style name="LeemWidget.TextView" parent="@style/LeemWidget">
+    </style>
+    <style name="LeemWidget.TextView.ListSeparator" parent="@style/LeemWidget.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:gravity">clip_horizontal</item>
+        <item name="android:background">@drawable/list_section_divider_holo_light</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LeemWidget.ListStyle" parent="@style/LeemWidget">
+        <item name="android:listPreferredItemHeight">65dp</item>
+    </style>
+    <style name="LeemWidget.ListStyle.LinearLayout" parent="@style/LeemWidget.ListStyle">
+        <item name="android:gravity">clip_horizontal</item>
+        <item name="android:orientation">@null</item>
+        <item name="android:background">@drawable/listview_normal</item>
+        <item name="android:paddingRight">?android:attr/scrollbarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:minHeight">65dp</item>
+    </style>
+    <style name="LeemWidget.ListStyle.LinearLayout_480_320" parent="@style/LeemWidget.ListStyle">
+        <item name="android:gravity">clip_horizontal</item>
+        <item name="android:orientation">@null</item>
+        <item name="android:paddingRight">?android:attr/scrollbarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:minHeight">38dp</item>
+    </style>
+    <style name="LeemWidget.ListItem" parent="@style/LeemWidget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LeemWidget.ListItem.Image" parent="@style/LeemWidget.ListItem">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+    <style name="LeemWidget.ListItem.Image_480_320" parent="@style/LeemWidget.ListItem">
+        <item name="android:layout_width">40px</item>
+        <item name="android:layout_height">40px</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">15px</item>
+    </style>
+    <style name="LeemWidget.ListItem.RelativeLayout" parent="@style/LeemWidget.ListItem">
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="LeemWidget.CompoundButton" parent="@android:style/Widget.CompoundButton">
+    </style>
+    <style name="LeemWidget.CompoundButton.Switch" parent="@style/LeemWidget.CompoundButton">
+        <item name="textOn">@string/capital_on</item>
+        <item name="textOff">@string/capital_off</item>
+        <item name="thumbTextPadding">8dp</item>
+        <item name="switchMinWidth">66dp</item>
+        <item name="switchPadding">8dp</item>
+    </style>
+    <style name="LeemWidget.CompoundButton.Switch.Dark" parent="@style/LeemWidget.CompoundButton.Switch">
+        <item name="thumb">@drawable/switch_inner_holo_dark</item>
+        <item name="track">@drawable/switch_track_holo_dark</item>
+        <item name="switchTextAppearance">@style/LeemWidget.SelfTextAppearance.Small</item>
+    </style>
+    <style name="LeemWidget.CompoundButton.Switch.Light" parent="@style/LeemWidget.CompoundButton.Switch">
+        <item name="thumb">@drawable/switch_inner_holo_light</item>
+        <item name="track">@drawable/switch_track_holo_light</item>
+        <item name="switchTextAppearance">@style/LeemWidget.SelfTextAppearance.Small</item>
+    </style>
+    <style name="LeemWidget.CompoundButton.RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:button">?android:attr/listChoiceIndicatorSingle</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+    <style name="LeemWidget.Preference" parent="@style/LeemWidget">
+        <item name="layout">@layout/leem_preference</item>
+    </style>
+    <style name="LeemWidget.Preference.PreferenceScreen" parent="@style/LeemWidget.Preference">
+    </style>
+    <style name="LeemWidget.Preference.Category" parent="@style/LeemWidget.Preference">
+        <item name="layout">@layout/leem_preference_category</item>
+        <item name="selectable">false</item>
+        <item name="shouldDisableView">false</item>
+    </style>
+    <style name="LeemWidget.Preference.CheckBoxPreference" parent="@style/LeemWidget.Preference">
+        <item name="widgetLayout">@layout/leem_preference_widget_checkbox</item>
+    </style>
+    <style name="LeemWidget.Preference.SwitchPreference" parent="@style/LeemWidget.Preference">
+        <item name="android:widgetLayout">@layout/leem_preference_widget_switch</item>
+        <item name="switchTextOn">@string/capital_on</item>
+        <item name="switchTextOff">@string/capital_off</item>
+    </style>
+    <style name="LeemWidget.PreferencePanel" parent="@style/LeemWidget">
+    </style>
+    <style name="LeemWidget.PreferenceFrameLayout" parent="@style/LeemWidget">
+        <item name="borderTop">0dp</item>
+        <item name="borderBottom">0dp</item>
+        <item name="borderLeft">0dp</item>
+        <item name="borderRight">0dp</item>
+    </style>
+    <style name="LeemWidget.Preference.DialogPreference" parent="@style/LeemWidget.Preference">
+        <item name="positiveButtonText">@string/ok</item>
+        <item name="negativeButtonText">@string/cancel</item>
+    </style>
+    <style name="LeemWidget.Preference.DialogPreference.YesNoPreference" parent="@style/LeemWidget.Preference.DialogPreference">
+        <item name="positiveButtonText">@string/yes</item>
+        <item name="negativeButtonText">@string/no</item>
+    </style>
+    <style name="LeemWidget.Preference.DialogPreference.EditTextPreference" parent="@style/LeemWidget.Preference.DialogPreference">
+        <item name="dialogLayout">@layout/leem_preference_dialog_edittext</item>
+    </style>
+    <style name="TaskManager_TextColor">
+        <item name="android:textSize">17dp</item>
+    </style>
+    <style name="MyTheme" parent="@android:style/Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="MyTheme.CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MyTheme.CustomDialogNoDim" parent="@style/MyTheme.CustomDialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="LeemTitleTheme" parent="@android:style/Theme.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">46dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/StatusBarBackground</item>
+    </style>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="300dp" android:layout_height="match_parent">
+    <TextView android:textSize="18dp" android:textColor="@color/black2" android:id="@+id/net_set_title_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_traffic_package_limit_des"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/net_card1_flag" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <TextView android:textSize="15dp" android:id="@+id/net_card3_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_card3"/>
+        <EditText android:id="@+id/net_set_card1_package" android:background="@android:drawable/edit_text" android:paddingLeft="6dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="6" android:numeric="integer" android:layout_weight="1"/>
+        <TextView android:textSize="15dp" android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_m"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/net_card_flag" android:paddingLeft="10dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15dp" android:id="@+id/net_text_desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_card4"/>
+        <EditText android:id="@+id/net_set_card2_package" android:background="@android:drawable/edit_text" android:paddingLeft="6dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="6" android:numeric="integer" android:layout_weight="1"/>
+        <TextView android:textSize="15dp" android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_m"/>
+    </LinearLayout>
+</LinearLayout>

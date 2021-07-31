@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_drawer_item" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/newmark_drawer_item" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_small" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/img_drawer_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14dp" android:textColor="#ff4a4a4a" android:id="@+id/title_drawer_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" android:layout_below="@+id/img_drawer_item" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

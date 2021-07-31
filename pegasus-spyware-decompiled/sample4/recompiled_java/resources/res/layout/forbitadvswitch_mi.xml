@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="?android:attr/listPreferredItemHeight" android:minHeight="?android:attr/listPreferredItemHeight">
+    <TextView android:textSize="18dp" android:textColor="@android:color/primary_text_dark" android:id="@+id/adv_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="5dp" android:text="@string/error_pagetitle" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <ImageView android:id="@+id/adv_checkbox" android:layout_width="60dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:checked="true" android:src="@drawable/btn_on" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/adv_checkboxtxt" android:paddingTop="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="5dp" android:text="@string/error_pagedesc" android:maxLines="2" android:layout_toLeftOf="@+id/adv_checkbox" android:layout_below="@+id/adv_txt" android:layout_alignParentLeft="true"/>
+    <View android:background="?android:attr/listDivider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

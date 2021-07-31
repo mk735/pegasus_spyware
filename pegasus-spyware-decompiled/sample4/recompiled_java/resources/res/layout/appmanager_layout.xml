@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" layout="@layout/title"/>
+    <RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title" android:layout_alignParentLeft="true">
+        <TextView android:textSize="14dp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@+id/show_root_info" android:background="@drawable/show_root_info" android:visibility="visible" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/not_root_uninstall" android:layout_alignParentTop="true"/>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/appmag_progressBar" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:max="100" android:progress="66" android:progressDrawable="@drawable/progress" android:layout_below="@+id/show_root_info" android:layout_centerVertical="true" style="@style/Widget.ProgressBar.Horizontal"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/appmag_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_below="@+id/appmag_progressBar" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/appmag_listView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/relativeLayout2"/>
+    <RelativeLayout android:id="@+id/loadrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:id="@+id/load_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="66dp" android:text="@string/antispamupload_desc" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ProgressBar android:id="@+id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:layout_toLeftOf="@+id/load_textview" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</RelativeLayout>

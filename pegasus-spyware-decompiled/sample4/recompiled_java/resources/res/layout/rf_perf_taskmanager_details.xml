@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/listview_normal" android:layout_width="match_parent" android:layout_height="68dp" android:minHeight="68dp">
+    <ImageView android:id="@+id/process_icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="10dp" android:src="@drawable/icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:ellipsize="end" android:id="@+id/process_name" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:singleLine="true" android:layout_toRightOf="@+id/process_icon" android:layout_centerVertical="true" style="@style/TaskManager_TextColor"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#ff7a7a7a" android:ellipsize="end" android:id="@+id/process_mem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/process_name" android:layout_centerVertical="true"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/item_press" android:background="@drawable/rf_perf_item_press" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

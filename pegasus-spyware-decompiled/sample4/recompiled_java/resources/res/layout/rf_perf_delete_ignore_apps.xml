@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/listview_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="24dp">
+        <TextView android:textSize="13dp" android:textColor="#ff878787" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/white_list_benefit"/>
+        <CheckBox android:layout_gravity="center" android:id="@+id/checkAll" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" style="@style/LeemWidget.LayoutListTitle">
+        <TextView android:textSize="15dp" android:textColor="#ff878787" android:gravity="center_vertical" android:id="@+id/selectedApps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bhmd"/>
+    </LinearLayout>
+    <ListView android:id="@+id/ignoreList" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10px" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/heise" android:id="@+id/selectedBtn" android:background="@drawable/signbtn_bg" android:layout_width="125dp" android:layout_height="43dp" android:layout_marginLeft="20dp" android:text="@string/white_list_delete" android:layout_alignParentLeft="true"/>
+        <Button android:textColor="@color/heise" android:id="@+id/backBtn" android:background="@drawable/signbtn_bg" android:layout_width="125dp" android:layout_height="43dp" android:layout_marginRight="20dp" android:text="@string/button_cancel" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

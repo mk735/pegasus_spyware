@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+    <TextView android:textSize="16dp" android:textColor="@color/black2" android:id="@+id/note1_manual_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+    <TextView android:textSize="16dp" android:textColor="@color/black2" android:id="@+id/note2_manual_update" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="12dp" android:text="@string/is_update_lab_text"/>
+</LinearLayout>

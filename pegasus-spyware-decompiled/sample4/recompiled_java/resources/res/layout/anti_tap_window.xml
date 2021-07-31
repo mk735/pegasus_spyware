@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/toast_background" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/safecenter"/>
+    <TextView android:textSize="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="3dp" android:text="@string/anti_tap_protect"/>
+</LinearLayout>

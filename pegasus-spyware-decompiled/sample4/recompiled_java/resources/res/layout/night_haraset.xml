@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+        <ImageView android:id="@+id/night_switch" android:layout_width="60dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:checked="true" android:src="@drawable/btn_on" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_toLeftOf="@+id/antispam_checkbox" android:layout_alignParentLeft="true">
+            <TextView android:textSize="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/night_harsstitle"/>
+            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/nightswitch_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opend" android:maxLines="2"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/endcall_lay" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight" android:layout_alignParentLeft="true">
+        <TextView android:textSize="22dp" android:id="@+id/endcall_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/night_callharsstitle"/>
+        <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/endcall_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/night_callharsstitle" android:maxLines="2"/>
+    </LinearLayout>
+    <TextView android:text="@string/night_harssdesc" style="@style/TextBackground"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/begintime_lay" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight" android:layout_alignParentLeft="true">
+        <TextView android:textSize="22dp" android:id="@+id/begintime_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/night_harssebegin"/>
+        <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/begintime_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/opend" android:maxLines="2"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/endtime_lay" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight" android:layout_alignParentLeft="true">
+        <TextView android:textSize="22dp" android:id="@+id/endtime_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/night_harsseend"/>
+        <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/endtime_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/opend" android:maxLines="2"/>
+    </LinearLayout>
+</LinearLayout>

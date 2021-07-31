@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/slide_allow" android:text="@string/notification_string_allow" android:drawableLeft="@drawable/perm_grant" style="@style/silde_panel_btn_noti"/>
+    <Button android:id="@+id/slide_fobid" android:text="@string/notification_string_forbid" android:drawableLeft="@drawable/perm_deny" style="@style/silde_panel_btn_noti"/>
+</LinearLayout>

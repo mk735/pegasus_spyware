@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="package_key">
+        <item>com.tencent.pao</item>
+    </array>
+    <array name="channel_name">
+        <item>天天酷跑</item>
+    </array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/SenderPic" android:visibility="gone" android:layout_width="70dp" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_alignParentBottom="true"/>
+    <TextView android:id="@+id/SelfPic" android:visibility="gone" android:layout_width="70dp" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/SmsFrame" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/SelfPic" android:layout_toRightOf="@+id/SenderPic">
+        <ImageView android:id="@+id/StatusPic" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="4dp" android:layout_marginTop="2dp" android:layout_alignParentRight="true"/>
+        <TextView android:id="@+id/ListSubTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/StatusPic" android:layout_alignWithParentIfMissing="true"/>
+        <TextView android:ellipsize="marquee" android:id="@+id/ListTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@+id/ListSubTitle" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="16sp" android:id="@+id/ListBody" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:layout_below="@+id/ListTitle" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+</RelativeLayout>

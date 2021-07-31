@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/antispamwhitesmsaddview_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title"/>
+    <include android:id="@+id/antispamtableaddsms_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/antispamwhitesmsaddview_title" layout="@layout/antispamtwo_button"/>
+    <TextView android:textSize="14dp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/antispamtxt_addwsms" android:background="#ffababab" android:paddingLeft="10px" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/antispamadd_whitesms_title" android:maxLines="5" android:layout_below="@+id/antispamtableaddsms_header"/>
+    <LinearLayout android:id="@+id/antispamlay2_sms" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="5px" android:layout_marginBottom="5px" android:layout_below="@+id/antispamtxt_addwsms"/>
+    <LinearLayout android:gravity="center_horizontal" android:id="@+id/antispamadd_start_setting_guide_sms" android:background="@drawable/antispammaintab_toolbar_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/antispamadd_AppraiseLinearLayout_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antispamlocalblack_add" android:drawableTop="@drawable/antispamadd" android:drawablePadding="3dp" style="@style/antispammain_tab_bottom"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/antispamadd_start_setting_guide_sms" android:layout_below="@+id/antispamlay2_sms">
+        <TextView android:gravity="center" android:id="@+id/antispamaddempty_addsms" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/antispamsmswhite_hasNoData"/>
+        <ListView android:id="@+id/addwhitesmslist" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000"/>
+    </LinearLayout>
+</RelativeLayout>

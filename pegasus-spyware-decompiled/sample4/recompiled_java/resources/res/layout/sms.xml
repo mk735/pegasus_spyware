@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="?android:attr/listPreferredItemHeight">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/safemode_smscheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_centerVertical="true"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/safemode_smslayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/safemode_smscheck" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/safemode_realay01" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+            <TextView android:textSize="18dp" android:ellipsize="end" android:id="@+id/safemode_smsname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15px" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:ellipsize="end" android:gravity="right" android:id="@+id/safemode_smsnumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="15px" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/safemode_realay01">
+            <TextView android:ellipsize="end" android:id="@+id/safemode_smscontent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15px" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

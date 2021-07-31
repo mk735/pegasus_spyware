@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <include layout="@layout/unroot_tip"/>
+    <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/notification_tab_radiogroup" android:layout_width="match_parent" android:layout_height="50dp">
+        <RadioButton android:id="@+id/notification_permission" android:checked="true" android:text="@string/radiobutton_notification_permission_tab" style="@style/tab_child"/>
+        <RadioButton android:id="@+id/ad_inline" android:text="@string/radiobutton_notification_inline_tab" style="@style/tab_child"/>
+    </RadioGroup>
+    <android.support.v4.view.ViewPager android:id="@+id/intercept_viewpager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

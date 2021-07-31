@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+    <LinearLayout android:gravity="center" android:background="@drawable/dialog_title_bg" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:background="@android:drawable/ic_dialog_alert" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="20dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/info" android:shadowColor="#ff000000" android:shadowDx="1" android:shadowDy="0" android:shadowRadius="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/input_password_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18dp" android:textColor="#ff000000" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/set_pwd_info"/>
+        <LinearLayout android:id="@+id/splitline" android:background="@drawable/home_page_drawer_splitline_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/dialog_bg_bottom" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/dialog_cancel" android:background="@drawable/signbtn_bg" android:layout_width="0dp" android:layout_height="36dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="@string/cancel" android:layout_weight="1" style="@style/ButtonText"/>
+            <TextView android:gravity="center" android:id="@+id/dialog_ok" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="0dp" android:layout_height="36dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="@string/set" android:layout_weight="1" style="@style/ButtonText"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

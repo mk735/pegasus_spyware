@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="280dp" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/input_title_layout" android:background="@drawable/title_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/input_pwd"/>
+        <ProgressBar android:id="@+id/input_noti_progress" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/input_title_divider" android:background="@android:drawable/divider_horizontal_dark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15dp" android:textColor="#ff454545" android:id="@+id/txt_message" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/edt_input_pwd" android:background="@android:drawable/edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/input_bottom_layout" android:background="@drawable/dialog_bg_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/input_pwd_ok" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1"/>
+        <Button android:id="@+id/input_pwd_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

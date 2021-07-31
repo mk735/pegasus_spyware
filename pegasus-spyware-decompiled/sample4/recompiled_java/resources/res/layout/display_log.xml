@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/display_log_title" android:visibility="gone" layout="@layout/title"/>
+    <LinearLayout android:gravity="center" android:id="@+id/display_log_delete" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/display_log_title">
+        <Button android:id="@+id/delete_harras_logs" android:layout_width="180dp" android:layout_height="36dp" android:text="@string/edit"/>
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@+id/txt_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/nologdate" android:layout_below="@+id/display_log_delete"/>
+    <ListView android:id="@+id/listView_log" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/display_log_delete"/>
+</RelativeLayout>

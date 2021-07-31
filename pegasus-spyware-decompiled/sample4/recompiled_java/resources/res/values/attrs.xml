@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="switchStyle" format="reference">
+    </attr>
+    <attr name="preferenceFrameLayoutStyle" format="reference">
+    </attr>
+    <attr name="preferenceFragmentStyle" format="reference">
+    </attr>
+    <attr name="preferencePanelStyle" format="reference">
+    </attr>
+    <attr name="switchPreferenceStyle" format="reference">
+    </attr>
+    <attr name="thumb" format="reference">
+    </attr>
+    <attr name="track" format="reference">
+    </attr>
+    <attr name="textOn" format="string">
+    </attr>
+    <attr name="textOff" format="string">
+    </attr>
+    <attr name="thumbTextPadding" format="dimension">
+    </attr>
+    <attr name="switchTextAppearance" format="reference">
+    </attr>
+    <attr name="switchMinWidth" format="dimension">
+    </attr>
+    <attr name="switchPadding" format="dimension">
+    </attr>
+    <attr name="orderingFromXml" format="boolean">
+    </attr>
+    <attr name="id" format="reference">
+    </attr>
+    <attr name="title" format="string">
+    </attr>
+    <attr name="summary" format="string">
+    </attr>
+    <attr name="breadCrumbTitle" format="string">
+    </attr>
+    <attr name="breadCrumbShortTitle" format="string">
+    </attr>
+    <attr name="icon" format="reference">
+    </attr>
+    <attr name="fragment" format="string">
+    </attr>
+    <attr name="key" format="string">
+    </attr>
+    <attr name="order" format="integer">
+    </attr>
+    <attr name="layout" format="reference">
+    </attr>
+    <attr name="widgetLayout" format="reference">
+    </attr>
+    <attr name="enabled" format="boolean">
+    </attr>
+    <attr name="selectable" format="boolean">
+    </attr>
+    <attr name="dependency" format="string">
+    </attr>
+    <attr name="persistent" format="boolean">
+    </attr>
+    <attr name="defaultValue" format="reference|string|integer|boolean|float">
+    </attr>
+    <attr name="shouldDisableView" format="boolean">
+    </attr>
+    <attr name="summaryOn" format="string">
+    </attr>
+    <attr name="summaryOff" format="string">
+    </attr>
+    <attr name="disableDependentsState" format="boolean">
+    </attr>
+    <attr name="dialogTitle" format="string">
+    </attr>
+    <attr name="dialogMessage" format="string">
+    </attr>
+    <attr name="dialogIcon" format="reference">
+    </attr>
+    <attr name="positiveButtonText" format="string">
+    </attr>
+    <attr name="negativeButtonText" format="string">
+    </attr>
+    <attr name="dialogLayout" format="reference">
+    </attr>
+    <attr name="entries" format="reference">
+    </attr>
+    <attr name="entryValues" format="reference">
+    </attr>
+    <attr name="borderTop" format="dimension">
+    </attr>
+    <attr name="borderBottom" format="dimension">
+    </attr>
+    <attr name="borderLeft" format="dimension">
+    </attr>
+    <attr name="borderRight" format="dimension">
+    </attr>
+    <attr name="layout_removeBorders" format="boolean">
+    </attr>
+    <attr name="switchTextOn" format="string">
+    </attr>
+    <attr name="switchTextOff" format="string">
+    </attr>
+    <attr name="max" format="integer">
+    </attr>
+    <attr name="progress" format="integer">
+    </attr>
+    <attr name="secondaryProgress" format="integer">
+    </attr>
+    <attr name="indeterminate" format="boolean">
+    </attr>
+    <attr name="indeterminateOnly" format="boolean">
+    </attr>
+    <attr name="indeterminateDrawable" format="reference">
+    </attr>
+    <attr name="progressDrawable" format="reference">
+    </attr>
+    <attr name="indeterminateDuration" format="integer">
+        <item name="?0x1000001" value="1" />
+    </attr>
+    <attr name="indeterminateBehavior">
+        <enum name="repeat" value="1" />
+        <enum name="cycle" value="2" />
+    </attr>
+    <attr name="minWidth" format="dimension">
+    </attr>
+    <attr name="maxWidth" format="dimension">
+    </attr>
+    <attr name="minHeight" format="dimension">
+    </attr>
+    <attr name="maxHeight" format="dimension">
+    </attr>
+    <attr name="interpolator" format="reference">
+    </attr>
+    <attr name="animationResolution" format="integer">
+    </attr>
+    <attr name="typeface">
+        <enum name="normal" value="0" />
+        <enum name="sans" value="1" />
+        <enum name="serif" value="2" />
+        <enum name="monospace" value="3" />
+    </attr>
+    <attr name="textStyle">
+        <flag name="normal" value="0" />
+        <flag name="bold" value="1" />
+        <flag name="italic" value="2" />
+    </attr>
+    <attr name="textColor" format="reference|color">
+    </attr>
+    <attr name="textSize" format="dimension">
+    </attr>
+    <attr name="textColorHighlight" format="reference|color">
+    </attr>
+    <attr name="textColorHint" format="reference|color">
+    </attr>
+    <attr name="textColorLink" format="reference|color">
+    </attr>
+    <attr name="textAllCaps" format="boolean">
+    </attr>
+    <attr name="enable_checkbox" format="boolean">
+    </attr>
+    <attr name="animationDuration" format="integer">
+    </attr>
+    <attr name="position">
+        <enum name="top" value="0" />
+        <enum name="bottom" value="1" />
+        <enum name="left" value="2" />
+        <enum name="right" value="3" />
+    </attr>
+    <attr name="handle" format="reference">
+    </attr>
+    <attr name="handlebtn" format="reference">
+    </attr>
+    <attr name="content" format="reference">
+    </attr>
+    <attr name="hideContent" format="reference">
+    </attr>
+    <attr name="linearFlying" format="boolean">
+    </attr>
+    <attr name="weight" format="fraction">
+    </attr>
+    <attr name="openedHandle" format="reference|color">
+    </attr>
+    <attr name="closedHandle" format="reference|color">
+    </attr>
+    <attr name="settingTitle" format="string">
+    </attr>
+    <attr name="settingSummary" format="string">
+    </attr>
+    <attr name="settingShowCheckBox" format="boolean">
+    </attr>
+    <attr name="switcher_icon" format="reference">
+    </attr>
+    <attr name="switcher_label" format="reference">
+    </attr>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="300dp" android:layout_height="wrap_content">
+    <TextView android:textSize="18dp" android:textColor="@color/black2" android:id="@+id/note1_input_number" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/et_setting_number_comment" android:background="@android:drawable/edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true" android:maxLength="6" android:numeric="integer"/>
+    <TextView android:textSize="18dp" android:textColor="@color/gray2" android:id="@+id/note2_input_number" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:text="@string/is_update_lab_text"/>
+</LinearLayout>

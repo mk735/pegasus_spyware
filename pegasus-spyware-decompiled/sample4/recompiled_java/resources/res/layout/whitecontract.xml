@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/contract_framelayout" android:visibility="gone" layout="@layout/title"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/safemode_white_add" android:background="@drawable/buttom_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@+id/safemode_whitecontract_count" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="136dp" android:layout_height="40dp" android:text="@string/add"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/safemode_whitecontractlist" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#ffeeeeee" android:divider="@drawable/rf_perf_toast_split" android:dividerHeight="2dp" android:layout_above="@+id/safemode_white_add" android:layout_below="@+id/contract_framelayout"/>
+    <TextView android:textSize="14dp" android:gravity="center" android:id="@+id/private_empty_textview" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/pri_adddesc" android:layout_above="@+id/safemode_white_add" android:layout_below="@+id/contract_framelayout"/>
+</RelativeLayout>

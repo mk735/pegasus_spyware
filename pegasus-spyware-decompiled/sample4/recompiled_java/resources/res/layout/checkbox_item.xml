@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+    <ImageView android:id="@+id/appcheck_log" android:background="@drawable/ic_checkbox" android:layout_width="47px" android:layout_height="47px" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="30px"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/app_icon_log_checkbox" android:layout_width="70px" android:layout_height="70px" android:layout_marginLeft="15px" android:scaleType="fitCenter"/>
+    <TextView android:textSize="24px" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/app_name_log_checkbox" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15px"/>
+</LinearLayout>

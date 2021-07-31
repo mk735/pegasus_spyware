@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="private_quick_add">
+        <item>从通话记录导入</item>
+        <item>从短信记录导入</item>
+        <item>从联系人导入</item>
+        <item>手动添加</item>
+    </array>
+    <array name="sms_mode">
+        <item>无提醒</item>
+        <item>通知栏提醒</item>
+        <item>通知栏提醒+提示音</item>
+        <item>通知栏提醒+振动</item>
+    </array>
+    <array name="sms_mode_value">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="call_mode">
+        <item>正常接听</item>
+        <item>来电挂断</item>
+        <item>来电挂断并回复短信</item>
+    </array>
+    <array name="handup_mode">
+        <item>无提醒</item>
+        <item>通知栏提醒</item>
+    </array>
+    <array name="handup_mode_value">
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="call_mode_value">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="safe_mail_value">
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="safe_mail">
+        <item>编辑邮箱</item>
+        <item>立即备份</item>
+    </array>
+    <array name="black_qucik">
+        <item>删除</item>
+        <item>修改</item>
+        <item>发送信息</item>
+        <item>呼叫</item>
+    </array>
+    <array name="harsset_black">
+        <item>信息和来电</item>
+        <item>来电</item>
+        <item>信息</item>
+    </array>
+    <array name="nightcall_harsset">
+        <item>仅接听联系人</item>
+        <item>仅接听白名单</item>
+    </array>
+    <array name="quick_add">
+        <item>从来电记录导入</item>
+        <item>从短信记录导入</item>
+        <item>从联系人导入</item>
+        <item>手动添加</item>
+    </array>
+    <array name="antispamhandup_mode">
+        <item>智能拦截</item>
+        <item>只拦截黑名单</item>
+        <item>只接受联系人</item>
+        <item>只接受白名单</item>
+    </array>
+    <array name="antispamadd_whitephone">
+        <item>从通话记录导入</item>
+        <item>从短信列表导入</item>
+        <item>从联系人中导入</item>
+        <item>手动添加</item>
+    </array>
+    <array name="antispamhandup_mode_value">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="antispamquick_operat1">
+        <item>解除此黑名单</item>
+    </array>
+    <array name="antispamquick_add">
+        <item>从通话记录添加</item>
+        <item>从联系人中添加</item>
+        <item>手动添加</item>
+    </array>
+    <array name="antispamquick_add1">
+        <item>从短信列表添加</item>
+        <item>从联系人中添加</item>
+        <item>手动添加</item>
+    </array>
+    <array name="antispamquick_operat2">
+        <item>解除此黑名单</item>
+        <item>举报</item>
+    </array>
+    <array name="antispamquick_operat3">
+        <item>呼叫</item>
+        <item>发短信</item>
+        <item>解除此白名单</item>
+    </array>
+    <array name="updatevirus_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="updatevirus_mode">
+        <item>手动更新</item>
+        <item>每天</item>
+        <item>每周</item>
+    </array>
+    <array name="array_pwd_question">
+        <item>我小学的班主任叫什么名字?</item>
+        <item>我最喜欢吃的水果是什么?</item>
+        <item>我爸爸的生日是哪一天?</item>
+        <item>我最喜欢的歌曲名字是什么?</item>
+        <item>我的宠物的名字叫什么?</item>
+    </array>
+    <array name="check_time_entry">
+        <item>每10分钟</item>
+        <item>每20分钟</item>
+        <item>每30分钟</item>
+        <item>每1小时</item>
+        <item>每2小时</item>
+        <item>每3小时</item>
+    </array>
+    <array name="check_time_entry_value">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+    </array>
+    <array name="block_list_entries">
+        <item>返回忙音</item>
+        <item>返回已关机</item>
+        <item>返回已停机</item>
+        <item>返回空号</item>
+    </array>
+</resources>

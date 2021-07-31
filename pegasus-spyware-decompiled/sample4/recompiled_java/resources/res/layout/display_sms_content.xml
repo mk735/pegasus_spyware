@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18dp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/sms_number" android:padding="10px" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/sms_time" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10px" android:paddingTop="40dp" android:paddingRight="10px" android:layout_width="match_parent" android:layout_height="match_parent">
+        <EditText android:id="@+id/sms_content" android:background="@android:drawable/edit_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

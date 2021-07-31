@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_one_key" android:background="@drawable/onekey_wiget_0_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/toast_layout_left" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="17sp" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@+id/txt_toast_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/clean_center_ball" android:background="@android:color/transparent" android:layout_width="87dp" android:layout_height="87dp" android:layout_toRightOf="@+id/toast_layout_left">
+        <ImageView android:id="@+id/bkg_image" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/onekey_wiget_0_background"/>
+        <ImageView android:id="@+id/anim_raise" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/one_key_widget_clean"/>
+        <ImageView android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/onekey_widget_3"/>
+        <ImageView android:id="@+id/anim_image" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/onekey_widget_4_green"/>
+        <TextView android:textSize="18dp" android:textColor="#ff57ae00" android:layout_gravity="center" android:id="@+id/memoryUsage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:shadowColor="#ffffffff" android:shadowRadius="90"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/toast_layout_right" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-30dp" android:layout_toRightOf="@+id/clean_center_ball" android:layout_centerVertical="true">
+        <TextView android:textSize="17sp" android:textColor="#ff4a4a4a" android:gravity="center" android:id="@+id/txt_toast_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

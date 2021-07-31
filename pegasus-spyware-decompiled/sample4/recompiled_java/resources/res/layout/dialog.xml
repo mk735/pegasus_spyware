@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:id="@+id/rel_title" android:background="@drawable/dialog_title_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+        <ImageView android:id="@+id/icon" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="10dp" android:layout_marginRight="9dp" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="20dp" android:textColor="#ffffffff" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1" android:shadowDy="0" android:shadowRadius="1" android:layout_toRightOf="@+id/icon"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/dialog_center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="16dp" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="4dp" android:layout_marginRight="6dp" android:layout_marginBottom="4dp" android:shadowColor="#ffffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" style="@style/DialogText"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/content">
+            <LinearLayout android:id="@+id/splitline" android:background="@drawable/dialog_line" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="58dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp">
+                <TextView android:id="@+id/negativeButton" android:layout_width="0dp" android:layout_height="36dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1" style="@style/NegativeButtonText"/>
+                <TextView android:id="@+id/neutralButton" android:layout_width="0dp" android:layout_height="36dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1" style="@style/NegativeButtonText"/>
+                <TextView android:id="@+id/positiveButton" android:layout_width="0dp" android:layout_height="36dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1" style="@style/ButtonText"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

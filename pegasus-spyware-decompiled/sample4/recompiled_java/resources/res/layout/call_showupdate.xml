@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/bg_lin1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/bg_lin" android:background="@drawable/double_bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/stoplisten_lin" android:layout_width="185dp" android:layout_height="42dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/icon"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/verical_line"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp">
+                <TextView android:textSize="15dp" android:textColor="#ffb3c8ca" android:gravity="center" android:id="@+id/float_top" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textSize="13dp" android:textColor="#ffb3c8ca" android:gravity="center" android:id="@+id/float_bottom" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/sign_showlin" android:layout_width="185dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+            <TextView android:textSize="15dp" android:textColor="#ff233132" android:gravity="center" android:id="@+id/pop_number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="13dp" android:textColor="#ff233132" android:gravity="center" android:id="@+id/pop_desc" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

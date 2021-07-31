@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/app_dis_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+        <ImageView android:id="@+id/app_icon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="7dp" android:src="@drawable/icon3" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/itemcheck" android:background="@drawable/perm_grant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/itemcheck" android:layout_toRightOf="@+id/app_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="14dp" android:id="@+id/app_suggest" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggest_forbid" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:layout_toLeftOf="@+id/app_suggest" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="18dp" android:textColor="@color/black1" android:id="@+id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/app_discription" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="3"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

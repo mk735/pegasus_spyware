@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+    <ImageView android:id="@+id/antispamblack_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30px" android:layout_alignParentLeft="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/antispamblack_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:scaleType="fitCenter" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/antispamisupload" android:layout_toRightOf="@+id/antispamblack_image">
+            <TextView android:textSize="18dp" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/antispamlocalblack_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:singleLine="true"/>
+            <TextView android:textSize="14dp" android:ellipsize="end" android:id="@+id/antispamlocalblack_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/antispamisupload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/upload" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

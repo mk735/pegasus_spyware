@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayout" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/itemcheck_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout1" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_toRightOf="@+id/itemcheck_log">
+        <ImageView android:id="@+id/package_icon" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="3dp"/>
+        <TextView android:id="@+id/event_package" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/check_upload_icon" android:layout_width="25dp" android:layout_height="25dp"/>
+        <TextView android:id="@+id/event_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout2" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="3dp" android:layout_toRightOf="@+id/itemcheck_log" android:layout_below="@+id/linearLayout1">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18dp" android:ellipsize="end" android:id="@+id/event_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+            <TextView android:textSize="18dp" android:textStyle="bold" android:id="@+id/event_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

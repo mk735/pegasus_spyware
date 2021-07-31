@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title"/>
+    <TextView android:textSize="18dp" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/net_correct_setting_desc"/>
+    <TextView android:textSize="18dp" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/net_correct_config_desc"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/net_traffic_set_card1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <LinearLayout android:paddingLeft="20dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="18dp" android:layout_gravity="center_vertical" android:layout_width="90dp" android:layout_height="wrap_content" android:text="@string/net_correct_setting_proivce"/>
+            <Spinner android:id="@+id/net_correct_set_provice_editext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:paddingLeft="20dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="6dp">
+            <TextView android:textSize="18dp" android:layout_gravity="center_vertical" android:layout_width="90dp" android:layout_height="wrap_content" android:text="@string/net_correct_setting_city"/>
+            <Spinner android:id="@+id/net_correct_set_city_editext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:paddingLeft="20dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="6dp">
+            <TextView android:textSize="18dp" android:layout_gravity="center_vertical" android:layout_width="90dp" android:layout_height="wrap_content" android:text="@string/net_correct_setting_Operators"/>
+            <Spinner android:id="@+id/net_correct_set_Operators_editext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:paddingLeft="20dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="6dp">
+            <TextView android:textSize="18dp" android:layout_gravity="center_vertical" android:layout_width="90dp" android:layout_height="wrap_content" android:text="@string/net_correct_setting_Brand"/>
+            <Spinner android:id="@+id/net_correct_set_Brand_editext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <TextView android:textSize="19dp" android:textColor="@drawable/home_page_button_healthcheckup_color_selector" android:gravity="center" android:id="@+id/net_cancel" android:background="@drawable/signbtn_bg" android:clickable="true" android:layout_width="110dp" android:layout_height="36dp" android:layout_marginLeft="30dp" android:layout_marginTop="8dp" android:layout_marginBottom="5dp" android:text="@string/net_correct_cancel"/>
+        <TextView android:textSize="19dp" android:textColor="@drawable/home_page_button_healthcheckup_color_selector" android:gravity="center" android:id="@+id/net_traffic_correct" android:background="@drawable/home_page_button_healthcheckup_selector" android:clickable="true" android:layout_width="110dp" android:layout_height="36dp" android:layout_marginTop="8dp" android:layout_marginRight="30dp" android:layout_marginBottom="5dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

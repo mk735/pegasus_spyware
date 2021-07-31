@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+    <ImageView android:id="@+id/safemode_icon_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_marginRight="5px" android:src="@drawable/safemode_pri_message" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/safemode_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_marginRight="5px" android:src="@drawable/safemode_pri_message" android:layout_toRightOf="@+id/safemode_icon_call" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/safemode_type_icon" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView android:ellipsize="end" android:id="@+id/safemode_whitesms_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:singleLine="true" android:layout_weight="4"/>
+            <TextView android:gravity="right" android:id="@+id/txt_showcount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10px" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView android:ellipsize="end" android:id="@+id/safemode_whitesms_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:ellipsize="end" android:id="@+id/safemode_whitesms_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

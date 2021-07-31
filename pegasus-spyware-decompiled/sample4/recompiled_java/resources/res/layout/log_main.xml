@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/log_main_title" android:visibility="gone" layout="@layout/title"/>
+    <LinearLayout android:gravity="center" android:id="@+id/report1_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/log_main_title">
+        <Button android:id="@+id/log1_selectall" android:layout_width="0dp" android:layout_height="36dp" android:text="@string/all_select" android:layout_weight="1"/>
+        <Button android:id="@+id/log1_cancelall" android:layout_width="0dp" android:layout_height="36dp" android:text="@string/cancel_select" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/log_main_delete" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/delete_logs" android:layout_width="180dp" android:layout_height="36dp" android:text="@string/delete"/>
+        <Button android:id="@+id/recover_logs" android:visibility="gone" android:layout_width="180dp" android:layout_height="36dp" android:text="@string/menu_recover"/>
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@+id/txt_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/nologdate" android:layout_above="@+id/log_main_delete" android:layout_below="@+id/report1_layout"/>
+    <ListView android:id="@+id/listView_log" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/log_main_delete" android:layout_below="@+id/report1_layout"/>
+</RelativeLayout>

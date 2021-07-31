@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+    <TextView android:textSize="18dp" android:id="@+id/etitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/hand_number"/>
+    <TextView android:textSize="14dp" android:id="@+id/etitle_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/changedes_txt1"/>
+    <EditText android:textSize="18dp" android:id="@+id/e_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="@string/hand_number_hit" android:singleLine="true"/>
+    <TextView android:textSize="18dp" android:id="@+id/e_icon" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/hand_number"/>
+    <View android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+    <ListView android:id="@+id/elist" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/rf_perf_toast_split" android:dividerHeight="2dp"/>
+    <View android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <Button android:id="@+id/esumbit" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="136dp" android:layout_height="40dp" android:text="@string/Complete"/>
+    </LinearLayout>
+</LinearLayout>

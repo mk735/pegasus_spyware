@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/antivirus_item_bg_selector" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_marginTop="0dp" android:layout_marginBottom="0dp">
+    <ImageView android:id="@+id/antivirus_main_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/itemmain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/antivirus_main_item_icon" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="18dp" android:textColor="@color/black2" android:gravity="left" android:id="@+id/antivirusbigtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10px" android:layout_weight="1"/>
+            <ImageView android:id="@+id/isNew_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="2dp" android:src="@drawable/new_point"/>
+            <ImageView android:id="@+id/antiviruslenovo" android:layout_width="40px" android:layout_height="40px" android:src="@drawable/icon"/>
+            <ImageView android:id="@+id/antivirusqq" android:layout_width="40px" android:layout_height="40px" android:src="@drawable/antivirusqq"/>
+            <ImageView android:id="@+id/antivirusidefend" android:layout_width="40px" android:layout_height="40px" android:layout_marginRight="20px" android:src="@drawable/antivirusbitdefend"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="@color/gray2" android:id="@+id/antivirussmalltitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+            <TextView android:textSize="14dp" android:textColor="@color/gray2" android:ellipsize="end" android:id="@+id/antivirustitledesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:ems="10" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/antivirusmain_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10px" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/hsr1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="200dp" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16px" android:textColor="#ff454545" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/opti_ani_text_cpu_title" android:layout_weight="1.5"/>
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressbar_cpu" android:layout_width="180px" android:layout_height="12px" android:layout_marginLeft="6px" android:progressDrawable="@drawable/progress" android:layout_weight="8" style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView android:textSize="16px" android:textColor="#ff454545" android:gravity="center_vertical" android:id="@+id/task_manager_cpu_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="4px" android:layout_weight="1.5"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13px">
+            <TextView android:textSize="16px" android:textColor="#ff454545" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/opti_ani_text_memory_title" android:layout_weight="1.5"/>
+            <ProgressBar android:textColor="#ff454545" android:layout_gravity="center_vertical" android:id="@+id/progressbar_mem" android:layout_width="180px" android:layout_height="12px" android:layout_marginLeft="5px" android:progressDrawable="@drawable/progress" android:layout_weight="8" style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView android:textSize="16px" android:textColor="#ff454545" android:gravity="center_vertical" android:id="@+id/task_manager_memory_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="4px" android:layout_weight="1.5"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progress_small" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

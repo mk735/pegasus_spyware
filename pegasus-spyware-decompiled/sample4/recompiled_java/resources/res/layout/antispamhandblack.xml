@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/antispamhandblack_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/antispamhand_number_lay01" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20px" android:layout_marginTop="50px" android:layout_below="@+id/antispamhandblack_title">
+        <TextView android:textSize="18dp" android:gravity="center" android:id="@+id/antispamhand_number" android:layout_width="130px" android:layout_height="wrap_content" android:text="@string/antispamhand_number"/>
+        <EditText android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/antispamhand_number_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:hint="@string/add_telnumber" android:singleLine="true" android:phoneNumber="true" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/antispamhand_number_lay02" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20px" android:layout_marginTop="30px" android:layout_below="@+id/antispamhand_number_lay01">
+        <TextView android:textSize="18dp" android:gravity="center" android:id="@+id/antispamhand_name" android:layout_width="130px" android:layout_height="wrap_content" android:text="@string/antispamhand_name"/>
+        <EditText android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/antispamhand_name_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:hint="@string/antispamhand_name_hit" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20px" android:layout_marginTop="30px" android:layout_below="@+id/antispamhand_number_lay02">
+        <TextView android:textSize="18dp" android:gravity="center" android:layout_width="150px" android:layout_height="wrap_content" android:text="@string/harss_set"/>
+        <CheckBox android:id="@+id/harass_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/localblack_becall"/>
+        <CheckBox android:id="@+id/harass_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20px" android:text="@string/sms"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/buttom_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+        <Button android:id="@+id/antispamhand_numbre_back" android:background="@drawable/signbtn_bg" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="@string/antispamlocalblack_back" android:layout_weight="1"/>
+        <Button android:id="@+id/antispamhand_numbre_add" android:background="@drawable/home_page_button_healthcheckup_selector" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/antispamlocalblack_add" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

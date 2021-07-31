@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/dialog_title_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <ImageView android:id="@+id/comfir_closed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/comfir_closed" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20dp" android:textColor="#ffffffff" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/sign" android:shadowColor="#ff000000" android:shadowDx="1" android:shadowDy="0" android:shadowRadius="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/dialog_center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17dp" android:textColor="#ff4a4a4a" android:gravity="center_vertical" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="8dp" android:text="@string/confirm_mes" android:shadowColor="#ffffffff" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1" style="@style/DialogText"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/splitline" android:background="@drawable/greenanto_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_below="@+id/content"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:layout_below="@+id/splitline">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="17dp" android:gravity="center" android:id="@+id/sign_txt1" android:background="@drawable/confirm_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="@string/signtype1" style="@style/DialogText"/>
+                <TextView android:textSize="17dp" android:gravity="center" android:id="@+id/sign_txt2" android:background="@drawable/confirm_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="@string/signtype4" style="@style/DialogText"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_weight="1">
+                <TextView android:textSize="17dp" android:gravity="center" android:id="@+id/sign_txt3" android:background="@drawable/confirm_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="@string/signtype2" style="@style/DialogText"/>
+                <TextView android:textSize="17dp" android:gravity="center" android:id="@+id/sign_txt4" android:background="@drawable/confirm_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="@string/signtype5" style="@style/DialogText"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/readline" android:background="@drawable/read_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="24dp" android:layout_marginRight="8dp" android:layout_below="@+id/button"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:layout_below="@+id/readline">
+            <TextView android:textSize="17dp" android:gravity="center" android:id="@+id/sign_txt5" android:background="@drawable/confirm_bg" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="@string/signtype3" android:layout_weight="1" style="@style/DialogText"/>
+            <TextView android:textSize="12dp" android:textColor="#ff7a7a7a" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="@string/confirm_desc" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+    <ImageView android:id="@+id/pkg_icon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="7dp" android:layout_marginRight="10dp" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/pkg_icon" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18dp" android:ellipsize="end" android:id="@+id/pkg_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="15dp" android:textColor="#ff29b1ef" android:ellipsize="end" android:gravity="right" android:id="@+id/pkg_trust" android:paddingRight="10px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trust_apps" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="14dp" android:textColor="#ffababab" android:ellipsize="end" android:id="@+id/pkg_mes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/img_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/upload" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

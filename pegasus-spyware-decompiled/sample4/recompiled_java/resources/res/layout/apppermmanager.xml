@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/app_include" layout="@layout/title"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/app_below_layout" android:background="@drawable/buttom_bg" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14dp" android:gravity="center" android:id="@+id/app_report" android:background="@drawable/signbtn_bg" android:layout_width="0dp" android:layout_height="34dp" android:text="@string/report" android:layout_weight="1"/>
+        <TextView android:textSize="14dp" android:gravity="center" android:id="@+id/app_uninstall" android:background="@drawable/signbtn_bg" android:layout_width="0dp" android:layout_height="34dp" android:layout_marginLeft="7dp" android:text="@string/uninstall" android:layout_weight="1"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/app_scrollview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/app_below_layout" android:layout_below="@+id/app_include">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/unroot_tip"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:paddingTop="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="7dp">
+                    <ImageView android:id="@+id/perm_app_icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/trust_app_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/trust_app_switch" android:layout_toRightOf="@+id/perm_app_icon" android:layout_centerVertical="true">
+                        <TextView android:textSize="18dp" android:id="@+id/perm_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                        <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/perm_app_des" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:id="@+id/tariff_group" android:visibility="gone" android:text="@string/tariff_perm_manage" style="@style/TextBackground"/>
+            <RelativeLayout android:id="@+id/perm_internet_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+                <ImageView android:id="@+id/img_internet_state" android:background="@drawable/perm_grant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/img_internet_state" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="18dp" android:id="@+id/txt_internet_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/perm_internet"/>
+                    <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/txt_internet_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/sendsms_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/perm_sendsms_layout" android:background="@drawable/setting_list_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+                    <ImageView android:id="@+id/img_sendsms_state" android:background="@drawable/perm_grant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/img_sendsms_state" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="14dp" android:id="@+id/sendsms_suggest" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggest_forbid" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/sendsms_suggest" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18dp" android:id="@+id/txt_sendsms_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/perm_send_sms"/>
+                            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/txt_sendsms_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout android:id="@+id/send_msg_choose" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:id="@+id/send_msg_allow" android:background="@drawable/btn_bg" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/perm_grant"/>
+                        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/allow"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@+id/send_msg_tip" android:background="@drawable/btn_bg" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/perm_prompt"/>
+                        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/antispamnotice"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@+id/send_msg_deny" android:background="@drawable/btn_bg" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/perm_deny"/>
+                        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/forbid"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/call_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/perm_call_layout" android:background="@drawable/setting_list_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+                    <ImageView android:id="@+id/img_call_state" android:background="@drawable/perm_grant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/img_call_state" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="14dp" android:id="@+id/call_suggest" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggest_forbid" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/call_suggest" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18dp" android:id="@+id/txt_call_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/perm_call"/>
+                            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/txt_call_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/privacy_group" android:visibility="gone" android:text="@string/privacy_perm_manage" style="@style/TextBackground"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/privacy_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/perm_privacy_layout" android:background="@drawable/setting_list_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+                    <ImageView android:id="@+id/img_privacy_state" android:background="@drawable/perm_grant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/img_privacy_state" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="14dp" android:id="@+id/privacy_suggest" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggest_forbid" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/privacy_suggest" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18dp" android:id="@+id/txt_privacy_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_privacy_info"/>
+                            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/txt_privacy_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/location_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/perm_location_layout" android:background="@drawable/setting_list_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+                    <ImageView android:id="@+id/img_location_state" android:background="@drawable/perm_grant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/img_location_state" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="14dp" android:id="@+id/location_suggest" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggest_forbid" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/location_suggest" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18dp" android:id="@+id/txt_location_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_location_info"/>
+                            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/txt_location_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/perm_c_location" android:maxLines="3"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/device_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/perm_device_layout" android:background="@drawable/setting_list_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+                    <ImageView android:id="@+id/img_device_state" android:background="@drawable/perm_grant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/img_device_state" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <TextView android:textSize="14dp" android:id="@+id/device_suggest" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/suggest_forbid" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/device_suggest" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                            <TextView android:textSize="18dp" android:id="@+id/txt_device_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_tap_calling"/>
+                            <TextView android:textSize="14dp" android:textColor="#ffababab" android:id="@+id/txt_device_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/record_separator" android:text="@string/app_logs" style="@style/TextBackground"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/recent_logs_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#ffababab" android:layout_gravity="center" android:id="@+id/app_no_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/recent_logs"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
