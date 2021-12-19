@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello" />
-    <string name="app_name" />
-    <string name="btnSettingsBack" />
-    <string name="nameTitle" />
-    <string name="settingsTitle" />
+    <string name="hello">Android</string>
+    <string name="app_name">Android Phone</string>
+    <string name="btnSettingsBack">Send</string>
+    <string name="nameTitle">Server Address:</string>
+    <string name="settingsTitle">screen lock</string>
 </resources>
