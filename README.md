@@ -3,6 +3,7 @@
 ### CURRENT VERSION 3.5
 
 ## Description: 
+## Operating System: AndroidOS 
 ### Samples 1-5.1 are executable and functional. I am still working on cleaning up Sample #6, but most the XML data can be read. 
 
 ## Steps To Install & Research The Spyware Samples
