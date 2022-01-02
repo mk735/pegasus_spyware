@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: assets/libsgn.so
+SHA1-Digest: jlkXqWHZ2rv8dMXlxoilUIDgTJA=
+
+Name: AndroidManifest.xml
+SHA1-Digest: LzjAF3wad04BalUStEmhMVUXcqE=
+
+Name: classes.dex
+SHA1-Digest: l7Rkps9BGFD3U4NvGpnf3laUUPo=
+

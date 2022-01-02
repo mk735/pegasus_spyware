@@ -30,3 +30,4 @@ Temporary Items
 
 .idea/*
 **/LOGS
+.DS_Store
