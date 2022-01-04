@@ -2,6 +2,17 @@
 ## Author: Jonathan Scott @jonathandata1    
 ### CURRENT VERSION 3.5
 
+## About Jonathan Scott
+
+> My name is Jonathan Scott, and I'm an American Security Researcher. I am currently a computer science PhD student at North Central University. My research focus is mobile spyware. I have been a mobile security engineer for ~13 years. 
+
+> I was recently assigned an LVE from LG that affects all LG mobile devices in the world.  I discovered a backdoor in all LG Mobile Devices that allows the attacker to live inside your device undetected. This has been built into the MTK chipsets since the 1st LG Smart Mobile Device (Cellphones and Tablets).
+
+**LVE-SMP-210010**
+source: https://lgsecurity.lge.com/bulletins/mobile#updateDetails
+![PEGASUS SPYWARE 5.1](https://i.postimg.cc/wMFBLpyf/Screen-Shot-2022-01-03-at-6-00-46-PM.png)
+
+
 ## Description: 
 ## Operating System: AndroidOS 
 ### Samples 1-5.1 are executable and functional. I am still working on cleaning up Sample #6, but most the XML data can be read. 
